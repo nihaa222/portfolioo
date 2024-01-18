@@ -8,8 +8,10 @@ function App() {
 
   return (
     <>
-      <div>Hello my name is niharika deb</div>
-      <div>Do you want to go out with me on a date</div>
+      <div>
+        My name is niharika deb what is yours will you like to go on a date with
+        me or not
+      </div>
     </>
   );
 }

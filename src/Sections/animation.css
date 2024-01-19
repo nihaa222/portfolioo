@@ -1,0 +1,5 @@
+@keyframes bounceUpDown {
+  to {
+    transform: translateY(20px);
+  }
+}

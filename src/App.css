@@ -3,5 +3,19 @@
 @tailwind utilities;
 
 body {
-  font-family: Poppins;
+  font-family: Playfair Display;
+}
+
+.myname {
+  color: red;
+}
+
+@keyframes pixi {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }

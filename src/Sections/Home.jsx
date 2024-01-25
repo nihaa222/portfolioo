@@ -1,102 +1,140 @@
 import styled from "styled-components";
 import Navbar from "../components/Navbar";
-import { FaLinkedin } from "react-icons/fa";
+import { IoLogoLinkedin } from "react-icons/io5";
 import { FaGithub } from "react-icons/fa";
-import "../Sections/animation.css";
-import "animate.css/animate.css";
+import Typed from "react-typed";
+import { useEffect, useState } from "react";
+import { useSelector } from "react-redux";
 
 const Section = styled.div`
   height: 100vh;
-  background-color: #f9f1e5;
+  background-color: #f2e4e6;
   scroll-snap-align: center;
   display: flex;
   flex-direction: column;
 
   align-items: center;
+  z-index: -1;
 `;
 
 const Home = () => {
   const linkedinProfileUrl = "https://www.linkedin.com/in/niharika-deb/";
   const gitProfileUrl = "https://github.com/nihaa222";
+  const [showText, setShowText] = useState(false);
+  const setup = useSelector((state) => state.setup.value);
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      setShowText(true);
+    }, 3000);
+
+    return () => clearTimeout(timeoutId); // Cleanup the timeout on component unmount
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   return (
     <>
-      <Section>
+      <Section id="home" className="h-[100vh] background">
         <Navbar />
-        {/* <div
-        className="h-90vh w-[80%] md:w-[70%] mt-[25%]    sm:mt-[10%]  flex flex-col sm:flex-row sm:justify-between
-        items-center "
-      >
-        <div>
-          <div className="flex sm:flex-row justify-center font-bold sm:text-[50px]  ">
-            <h1>
-              Front-End React Developer{" "}
-              <img className="h-10 w-10" src="hand.png" />
-            </h1>
-          </div>
-          <p className="flex ">
-            Hi, I'm Niharika Deb. A passionate Front-end React Developer based
-            in Guwahati, India
-            <img className="h-8 w-15" src="location.png"></img>
-          </p>
-          <div className="flex gap-2">
-            <a
-              href={linkedinProfileUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaLinkedin size={20} />
-            </a>
-            <a href={gitProfileUrl} target="_blank" rel="noopener noreferrer">
-              <FaGithub size={20} />
-            </a>
-          </div>
-        </div>
-        <div className=" sm:flex-3">
-          <img src="face.png" className="h-40 w-40 sm:h-60 sm:w-60" />
-        </div>
-  </div> */}
-
-        <div className="mt-[25%] sm:mt-[20%] md:mt-[25%] lg:mt-[12%]  gap-10 justify-between items-center flex flex-col sm:flex-row m-8 sm:ml-20 sm:mr-20">
-          <div className="flex flex-2 flex-col w-[70%] sm:w-[70%] lg:w-[60%] xl:w-[50%]">
-            <div className="flex items-center font-bold text-[35px] sm:text-[35px] md:text-[45px] lg:text-[50px] ">
-              <h1 className="leading-2">Front-End React Developer</h1>
-              <img className="h-10 w-10" src="hand.png" />
-            </div>
-            <div className="flex">
-              <p className="mr-2 flex-wrap mt-4">
-                Hi, I'm Niharika Deb. A passionate Front-end React Developer
-                based in Guwahati, India
+        <div className=" h-full w-auto flex   justify-center mt-[20%] md:mt-[12%] xl:mt-[8%] sm:mt-[10%] lg:mt-[5%] 2xl:mt-[5%] ">
+          <div className="grid md:ml-[0px] lg:w-[800px] gap-10 md:w-[650px] xl:w-[1100px] xl:mx-[0px]  2xl:w-[1100px] w-[350px] xs:w-[300px] sm:w-[500px]   place-items-center  lg:gap-y-28  sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2  xl:grid-cols-2 items-center  ">
+            <div className="w-[400px] xs:mr-[-30px] sm:mr-[0px]  inline-block justify-self-center md:justify-self-start sm:ml-[50px] md:ml-[0px] ">
+              <p className="text-[40px] ">
+                <div className="flex items-center ">
+                  <div className="text-[18px] mb-[-30px] sm:text-[30px] text-gray-500 font-bold">
+                    {" "}
+                    Hi!
+                  </div>
+                  <div>
+                    <img
+                      className=" inline-block  h-7 w-7  2xl:h-[30px] 2xl:w-[30px]"
+                      src="hand.png"
+                    ></img>
+                  </div>
+                </div>
               </p>
-              <img className="h-8 w-15" src="location.png"></img>
+
+              <p className="md:text-[40px]  whitespace-nowrap lg:mb-[10px] lg:text-[30px] xl:text-[65px] 2xl:text-[70px]  text-[25px] font-bold w-[600px]  mb-4 md:mb-0 ">
+                <div style={{ color: "#e91e63" }}>I'm Niharika Deb</div>
+                <div className="mt-[-10px] ">
+                  {showText && (
+                    <Typed
+                      color={"#e91e63"}
+                      strings={[
+                        `<span style="margin-top: -20px; color: #e91e63;">Front-End Developer.</span>`,
+                      ]}
+                      typeSpeed={50}
+                      backSpeed={100}
+                    />
+                  )}
+                </div>
+              </p>
+              <p className=" w-[320px] xs:leading-[17px] sm:leading-tight xs:w-[300px]  xs:text-[15px] text-[18px]  sm:text-[20px] lg:w-[450px] xl:w-[600px] lg font xl:text-[20px] md:text-[22px] text-gray-500 ">
+                A skilled and passionate developer with experience in creationg
+                visulally appealing and user-friendly websites
+                {/* {showText && (
+                  <>
+                    <Typed
+                      strings={[
+                        '<span style="color:#e91e63;">Front-End Developer.</span> ',
+                      ]}
+                      typeSpeed={150}
+                      backSpeed={100}
+                      style={{
+                        "@media (max-width: 768px)": {
+                          fontSize: "60px", // Font size for md and above
+                        },
+                        fontWeight: "bold",
+                        // "@media (min-width: 768px)": {
+                        //   fontSize: "90px", // Font size for md and above
+                        // },
+                        "@media (min-width: 1280px)": {
+                          fontSize: "14px", // Font size for md and above
+                        },
+                      }}
+                    />
+                    {""}
+                  </>
+                )} */}
+              </p>
+
+              <div className="flex gap-2 mt-4">
+                <a href={linkedinProfileUrl}>
+                  <IoLogoLinkedin />
+                </a>
+                <a href={gitProfileUrl}>
+                  <FaGithub />
+                </a>
+              </div>
             </div>
-            <div className="flex gap-2 mt-4">
-              <a
-                href={linkedinProfileUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaLinkedin size={20} />
-              </a>
-              <a href={gitProfileUrl} target="_blank" rel="noopener noreferrer">
-                <FaGithub size={20} />
-              </a>
+            <div
+              className={` md:justify-self-end animate-pixi mr-[50px] sm:mr-[0px] translate-x-1`}
+            >
+              <img
+                className=" h-48 w-48 md:h-40 md:w-40 ] lg:w-[300px] lg:h-[300px]     rounded-full "
+                src="face.png"
+                style={{
+                  boxShadow: "-3px -6px 29px -1px rgba(219, 39, 119, 0.75)", // Tailwind pink-500 color
+                  display: setup === true ? "none" : "block",
+                }}
+              ></img>
+              {/* #animation */}
             </div>
-          </div>
-          <div className="flex-3 w-[30%] mb-2 ">
-            <img
-              src="face.png"
-              className="h-40 rounded-full w-40 sm:h-80 sm:w-70 animate-duration-10000 animate-bounce animate-infinite animate-alternate animate-bounceUpDown ease "
-            />
-          </div>
-        </div>
-        <div className=" hover:-translate-y-6 flex flex-col sm:flex-row gap-10 self-start  ml-[12%] sm:ml-[10%] lg:ml-[8%] xl:ml-[14%] 2xl:ml-[24%] mt-[12%] md:mt-[10%] lg:mt-[13%] 2xl:mt-[6%] xl:mt-[10%]  sm:mt-[16%] mr-[15%]">
-          <p className="white-space-nowrap">Tech Stack</p>
-          <div className="flex gap-9 flex-row">
-            <img className="h-7 w-7" src="html-5.png" />
-            <img className="h-8 w-8" src="css-3.png" />
-            <img className="h-8 w-8" src="js.png" />
-            <img className="h-8 w-8" src="react.png" />
-            <img className="h-8 w-8" src="th-removebg-preview.png" />
+            <div
+              style={{ display: setup ? "none" : "block" }}
+              className="  md:w-[600px] md:justify-self-start  animate-pulse sm:mr-[100px] xl:mt-[-150px] md:mr-[0px] justify-self-start sm:justify-self-center  md:mt-[0px]  flex md:flex-row flex-col md:gap-5 gap-3  md:items-center"
+            >
+              <p className="whitespace-nowrap">Tech Stack</p>
+              <div className="h-5 w-[0.8px] hidden md:block bg-black"></div>
+              <div className=" flex place-items-start md:gap-16 gap-8">
+                <img className="h-8 w-8" src="html-5.png"></img>
+                <img className="h-8 w-8" src="css-3.png"></img>
+                <img className="h-8 w-8" src="js.png"></img>
+                <img className="h-8 w-8" src="react.png"></img>
+                <img className="h-8 w-8" src="redux.png"></img>
+              </div>
+            </div>
+            <div></div>
           </div>
         </div>
       </Section>

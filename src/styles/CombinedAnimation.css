@@ -1,0 +1,23 @@
+/* CombinedAnimation.css */
+.line-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.animate-line {
+  width: 100px;
+  height: 2px;
+  background-color: red;
+  animation: lineAnimation 2s linear infinite alternate;
+}
+
+@keyframes lineAnimation {
+  0% {
+    transform: scaleX(1);
+  }
+  100% {
+    transform: scaleX(5); /* Adjust the scale value as needed */
+  }
+}

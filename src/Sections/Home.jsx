@@ -2,7 +2,7 @@ import styled from "styled-components";
 import Navbar from "../components/Navbar";
 import { IoLogoLinkedin } from "react-icons/io5";
 import { FaGithub } from "react-icons/fa";
-import Typed from "react-typed";
+import { Typed } from "react-typed";
 import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 

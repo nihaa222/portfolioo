@@ -22,7 +22,7 @@ const Contacts = () => {
             </p>
             <form
               name="contact"
-              method="POST"
+              action="POST"
               data-netlify="true"
               onSubmit="submit"
             >

@@ -2,9 +2,11 @@ import styled from "styled-components";
 import Navbar from "../components/Navbar";
 import { IoLogoLinkedin } from "react-icons/io5";
 import { FaGithub } from "react-icons/fa";
-import { Typed } from "react-typed";
+// import { useTypewriter } from "react-simple-typewriter";
+
 import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
+import { useTypingEffect } from "../components/typing-effect";
 
 const Section = styled.div`
   height: 100vh;
@@ -18,6 +20,7 @@ const Section = styled.div`
 `;
 
 const Home = () => {
+  const text = useTypingEffect("Front-End Developer", 200);
   const linkedinProfileUrl = "https://www.linkedin.com/in/niharika-deb/";
   const gitProfileUrl = "https://github.com/nihaa222";
   const [showText, setShowText] = useState(false);
@@ -58,14 +61,9 @@ const Home = () => {
                 <div style={{ color: "#e91e63" }}>I'm Niharika Deb</div>
                 <div className="mt-[-10px] ">
                   {showText && (
-                    <Typed
-                      color={"#e91e63"}
-                      strings={[
-                        `<span style="margin-top: -20px; color: #e91e63;">Front-End Developer.</span>`,
-                      ]}
-                      typeSpeed={50}
-                      backSpeed={100}
-                    />
+                    <div>
+                      <span style={{ color: "#e91e63" }}>{text}</span>
+                    </div>
                   )}
                 </div>
               </p>

@@ -91,7 +91,6 @@ function App() {
             </Load>
           </Loader>
         ) : null}
-
         <Container>
           <Home />
           <About />

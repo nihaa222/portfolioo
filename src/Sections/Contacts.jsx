@@ -20,7 +20,12 @@ const Contacts = () => {
             <p className="text-center xs:text-[30px] text-[18px] mt-4 z-10 text-white">
               CONTACT ME!
             </p>
-            <form>
+            <form
+              name="contact"
+              method="POST"
+              data-netlify="true"
+              onSubmit="submit"
+            >
               <div className="xs:gap-5 gap-6 lg:grid-cols-2 grid grid-cols-1 mx-[40px] xs:mx-[30px] mt-5 xs:mt-9 text-white">
                 <div className="lg:gap-4">
                   <label htmlFor="name" className="block">
@@ -28,6 +33,7 @@ const Contacts = () => {
                   </label>
                   <input
                     id="name"
+                    name="name"
                     required
                     type="text"
                     className="lg:p-2 text-black focus:outline-none focus:outline-blue-50 rounded-md w-68 input-field w-full"
@@ -39,6 +45,7 @@ const Contacts = () => {
                   </label>
                   <input
                     id="last"
+                    name="last"
                     required
                     type="text"
                     className="lg:p-2 text-black focus:outline-none focus:outline-blue-50 rounded-md input-field w-full"
@@ -48,6 +55,7 @@ const Contacts = () => {
                   <label className="block">Email</label>
                   <input
                     type="email"
+                    name="email"
                     required
                     className="lg:p-2 text-black focus:outline-none focus:outline-blue-50 rounded-md input-field w-full"
                   />
@@ -56,6 +64,7 @@ const Contacts = () => {
                   <label className="block">Mobile</label>
                   <input
                     type="number"
+                    name="number"
                     required
                     className="lg:p-2 rounded-md text-black focus:outline-blue-50 input-field w-full"
                   />
@@ -65,6 +74,7 @@ const Contacts = () => {
                 <div>
                   <p>Type your text here...</p>
                   <textarea
+                    name="text"
                     id="yourTextareaId"
                     className="w-full focus:outline-none text-black focus:outline-blue-50 rounded-md h-[100px]"
                     required

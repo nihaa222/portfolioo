@@ -111,13 +111,13 @@ const Navbar = () => {
 
         {isMenuOpen ? (
           <div className="fixed top-0 left-0 h-screen w-screen bg-green-50">
-            <div className="fixed left-100 block sm:hidden">
-              <button className="fixed left-100" onClick={Close}>
+            <div className="sm:hidden p-6">
+              <button className="fixed  " onClick={Close}>
                 <IoClose />
               </button>
             </div>
             <div className=" sm:flex">
-              <ul className="flex gap-4 flex-col items-center py-10">
+              <ul className="flex gap-4 flex-col items-center ">
                 {" "}
                 <li onClick={Close}>
                   <Link to="/">Home</Link>

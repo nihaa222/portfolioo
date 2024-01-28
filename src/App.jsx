@@ -21,7 +21,7 @@ const Loader = styled.div`
   font-size: 24px;
   font-weight: bold;
   color: #333;
-  margin-top: 20px;
+
   height: 100vh;
   width: 100vw;
   position: fixed;

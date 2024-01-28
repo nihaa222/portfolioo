@@ -95,7 +95,7 @@ const ProjectD = styled.div`
 
 const Projects = () => {
   return (
-    <Section id="projects">
+    <Section id="project">
       <div className=" text-center mb-[30px]  ">
         <p className="text-[18px]  lg:text-[60px] text-pink-500  font-bold">
           PROJECTS

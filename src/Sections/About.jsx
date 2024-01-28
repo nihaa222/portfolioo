@@ -3,7 +3,7 @@ import Abtem from "../components/Abtem";
 
 const Section = styled.div`
   height: 100vh;
-  background-color: #f2e4e6;
+  /* background-color: #f2e4e6; */
   scroll-snap-align: center;
 `;
 

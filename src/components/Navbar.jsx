@@ -105,58 +105,61 @@ const Navbar = () => {
     setMenuOpen((open) => !open);
   };
   return (
-    <div className="flex p-4 items-center justify-between">
-      <div>Niharika Deb</div>
+    <>
+      <div className="flex p-4 items-center justify-between">
+        <div>Niharika Deb</div>
 
-      {isMenuOpen ? (
-        <div className="fixed top-0 left-0 h-screen w-screen bg-green-50">
-          <div className="fixed left-100 block sm:hidden">
-            <button onClick={Close}>
-              <IoClose />
+        {isMenuOpen ? (
+          <div className="fixed top-0 left-0 h-screen w-screen bg-green-50">
+            <div className="fixed left-100 block sm:hidden">
+              <button className="fixed left-100" onClick={Close}>
+                <IoClose />
+              </button>
+            </div>
+            <div className=" sm:flex">
+              <ul className="flex gap-4 flex-col items-center py-10">
+                {" "}
+                <li onClick={Close}>
+                  <Link to="/">Home</Link>
+                </li>
+                <li onClick={Close}>
+                  <Link to="#about">About</Link>
+                </li>
+                <li onClick={Close}>
+                  <Link to="#project">Projects</Link>
+                </li>
+                <li onClick={Close}>
+                  <Link to="#contacts">Contacts</Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+        ) : (
+          <div className="block sm:hidden">
+            <button onClick={toggleMenu}>
+              <IoMenuSharp />
             </button>
           </div>
-          <div className=" sm:flex">
-            <ul className="flex gap-4 flex-col items-center py-10">
-              <li>
-                <Link to="/">Home</Link>
-              </li>
-              <li>
-                <Link to="/about">About</Link>
-              </li>
-              <li>
-                <Link to="/projects">Projects</Link>
-              </li>
-              <li>
-                <Link to="/contacts">Contacts</Link>
-              </li>
-            </ul>
-          </div>
-        </div>
-      ) : (
-        <div className="block sm:hidden">
-          <button onClick={toggleMenu}>
-            <IoMenuSharp />
-          </button>
-        </div>
-      )}
+        )}
 
-      <div className="hidden sm:flex">
-        <ul className="flex gap-4">
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-          <li>
-            <Link to="/projects">Projects</Link>
-          </li>
-          <li>
-            <Link to="/contacts">Contacts</Link>
-          </li>
-        </ul>
+        <div className="hidden sm:flex">
+          <ul className="flex gap-4">
+            <li onClick={Close}>
+              <Link to="/">Home</Link>
+            </li>
+            <li onClick={Close}>
+              <Link to="#about">About</Link>
+            </li>
+            <li onClick={Close}>
+              <Link to="#project">Projects</Link>
+            </li>
+            <li onClick={Close}>
+              <Link to="#contacts">Contacts</Link>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

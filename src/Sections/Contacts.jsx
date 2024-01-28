@@ -10,7 +10,7 @@ const Section = styled.div`
 
 const Contacts = () => {
   return (
-    <Section id="contact" className="xs:pt-[30px]">
+    <Section id="contacts" className="xs:pt-[30px]">
       <p className="text-center text-bold text-pink-500 font-bold lg:text-[60px] animate-pixi xs:text-[50px] text-[35px] xs:mb-2 mb-[20px]">
         Hello!
       </p>

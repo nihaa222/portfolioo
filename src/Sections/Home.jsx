@@ -49,13 +49,15 @@ const Home = () => {
       <Section id="home" className="h-[100vh] background">
         <Navbar />
 
-        <div className="h-70% m-6 flex flex-col gap-12 items-center">
+        <div className="h-70% m-6 flex flex-col gap-12 ">
           <div className="flex  gap-4 flex-col">
             <div
               className="text-[20px]  flex font-bold"
               style={{ display: "inline" }}
             >
-              <p style={{ display: "inline" }}>Hi</p>
+              <p className="self-center" style={{ display: "inline" }}>
+                Hi
+              </p>
               <p style={{ display: "inline" }}>
                 <img
                   style={{ display: "inline" }}
@@ -82,7 +84,7 @@ const Home = () => {
               </a>
             </div>
           </div>
-          <div>
+          <div className="self-center">
             <div>
               <img
                 style={{
@@ -95,7 +97,7 @@ const Home = () => {
             </div>
           </div>
           <div>
-            <div className="flex gap-4">
+            <div className="flex gap-4 items-end ">
               <img className="h-8  w-8" src="html-5.png"></img>
               <img className="h-8  w-8" src="css-3.png"></img>
               <img className="h-8  w-8" src="js.png"></img>

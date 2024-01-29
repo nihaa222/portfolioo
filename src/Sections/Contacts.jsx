@@ -20,7 +20,7 @@ const Contacts = () => {
           <p className="text-center xs:text-[30px] text-[18px] mt-4 z-10 text-white">
             CONTACT ME!
           </p>
-        <ContactForm
+          <ContactForm />
         </div>
       </div>
     </Section>

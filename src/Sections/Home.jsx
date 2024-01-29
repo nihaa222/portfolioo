@@ -49,7 +49,7 @@ const Home = () => {
       <Section id="home" className="h-[100vh] background">
         <Navbar />
 
-        <div className="h-70% m-6 flex flex-col gap-12 ">
+        <div className="h-70% mx-6 mt-10 flex flex-col gap-12 ">
           <div className="flex  gap-4 flex-col">
             <div
               className="text-[20px]  flex font-bold"

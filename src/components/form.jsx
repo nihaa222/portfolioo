@@ -1,7 +1,4 @@
-import { makeStyles } from "@mui/material";
-import Paper from "@mui/material";
-import TextField from "@mui/material";
-import Button from "@mui/material";
+import { makeStyles, Paper, TextField, Button } from "@mui/material";
 import SendIcon from "@mui/icons-material/Send";
 import { useReducer, useState } from "react";
 

@@ -25,10 +25,10 @@ const Abtem = () => {
   return (
     <>
       <div className="v place-end h-50 place-self-end w-50 border relative">
-        <div className=" relative">
+        <div className="">
           <img
             src="table.avif"
-            className="z-[-10] md:w-[750px] sm:w-[700px] lg:w-[400px] lg:h-[500px] rounded-md h-[250px] w-[350px]"
+            className=" md:w-[750px] sm:w-[700px] lg:w-[400px] lg:h-[500px] rounded-md h-[250px] w-[350px]"
             alt="Table"
             style={{
               boxShadow: "-3px -6px 29px -1px rgba(219, 39, 119, 0.75)", // Tailwind pink-500 color
@@ -48,11 +48,12 @@ const Abtem = () => {
               <p className="absolute left-[50%] text-sm">{formattedText}</p>
             </div>
           </div>
-          <div className="animate-pulse  xl:block hidden h-10 w-10 bg-pink-700 rounded-full absolute  lg:top-[-160px] lg:left-[200px]  xl:left-[300px"></div>
+          {/* <div className="animate-pulse  xl:block hidden h-10 w-10 bg-pink-700 rounded-full absolute  lg:top-[-160px] lg:left-[200px]  xl:left-[300px"></div>
           <div className="animate-pulse  xl:block hidden h-10 w-10 bg-pink-700 rounded-full absolute  lg:top-[-70px] lg:left-[200px]"></div>
           <div className="animate-pulse  xl:block hidden h-10 w-10 bg-pink-700 rounded-full absolute  lg:top-[40px] lg:left-[200px]"></div>
           <div className="animate-pulse  xl:block hidden h-10 w-10 bg-pink-700 rounded-full absolute  lg:top-[150px] lg:left-[200px]"></div>
-          <div className="animate-pulse  xl:block hidden h-10 w-10 bg-pink-700 rounded-full absolute  lg:top-[260px] lg:left-[200px]"></div>
+          <div className="animate-pulse  xl:block hidden h-10 w-10 bg-pink-700 rounded-full absolute  lg:top-[260px] lg:left-[200px]"></div> */}
+          <div className="  xl:block hidden h-[500px] w-2 bg-pink-500 rounded-full absolute  lg:top-[-160px] lg:left-[225px]  xl:left-[320px]"></div>
         </div>
       </div>
     </>

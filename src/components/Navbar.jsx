@@ -1,5 +1,5 @@
 // // import { useState } from "react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { IoMenuSharp } from "react-icons/io5";
 import { IoClose } from "react-icons/io5";
 // import { setSetupFalse, setSetupTrue } from "../features/navslice";
@@ -98,68 +98,86 @@ import { HashLink as Link } from "react-router-hash-link";
 
 const Navbar = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
-  const toggleMenu = () => {
-    setMenuOpen((open) => !open);
-  };
-  const Close = () => {
-    setMenuOpen((open) => !open);
-  };
-  return (
-    <>
-      <div className="flex p-4 font-bold items-center justify-between text-pink-700">
-        <div>Niharika Deb</div>
+  const [isScrolled, setScrolled] = useState(false);
 
-        {isMenuOpen ? (
-          <div className="fixed top-0 left-0 h-screen w-screen bg-green-50">
-            <div className="sm:hidden p-6">
-              <button className="fixed  " onClick={Close}>
-                <IoClose />
-              </button>
-            </div>
-            <div className=" sm:flex">
-              <ul className="flex gap-4 font-bold text-pink-700 flex-col items-center ">
-                {" "}
-                <li onClick={Close}>
-                  <Link to="/">Home</Link>
-                </li>
-                <li onClick={Close}>
-                  <Link to="#about">About</Link>
-                </li>
-                <li onClick={Close}>
-                  <Link to="#project">Projects</Link>
-                </li>
-                <li onClick={Close}>
-                  <Link to="#contacts">Contacts</Link>
-                </li>
-              </ul>
-            </div>
-          </div>
-        ) : (
-          <div className="block sm:hidden">
-            <button onClick={toggleMenu}>
-              <IoMenuSharp />
+  const toggleMenu = () => {
+    setMenuOpen(!isMenuOpen);
+  };
+
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrolled = window.scrollY > 0;
+      setScrolled(scrolled);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  return (
+    <div
+      className={`flex p-6 a bg-white fixed w-full z-50 font-bold items-center justify-between xl:p-10 lg:text-[20px] top-0 left-0 text-pink-700 ${
+        isScrolled ? "bg-gray-200" : ""
+      }`}
+    >
+      <div className="fixed top-3  ">Niharika Deb</div>
+
+      <div className="block fixed right-4 top-3 sm:hidden">
+        <button onClick={toggleMenu}>
+          {isMenuOpen ? <IoClose /> : <IoMenuSharp />}
+        </button>
+      </div>
+
+      {isMenuOpen && (
+        <div className="fixed top-0 left-0 h-screen w-screen bg-green-50">
+          <div className="sm:hidden p-6">
+            <button className="fixed" onClick={closeMenu}>
+              <IoClose />
             </button>
           </div>
-        )}
-
-        <div className="hidden sm:flex">
-          <ul className="flex gap-4 text-pink-500">
-            <li onClick={Close}>
-              <Link to="/">Home</Link>
-            </li>
-            <li onClick={Close}>
-              <Link to="#about">About</Link>
-            </li>
-            <li onClick={Close}>
-              <Link to="#project">Projects</Link>
-            </li>
-            <li onClick={Close}>
-              <Link to="#contacts">Contacts</Link>
-            </li>
-          </ul>
+          <div className="sm:flex fixed right-40">
+            <ul className="flex gap-4 font-bold text-pink-700 flex-col items-center">
+              <li onClick={closeMenu}>
+                <Link to="/">Home</Link>
+              </li>
+              <li onClick={closeMenu}>
+                <Link to="#about">About</Link>
+              </li>
+              <li onClick={closeMenu}>
+                <Link to="#project">Projects</Link>
+              </li>
+              <li onClick={closeMenu}>
+                <Link to="#contacts">Contacts</Link>
+              </li>
+            </ul>
+          </div>
         </div>
+      )}
+
+      <div className="hidden fixed right-10 top-5 sm:flex  z-50 xl:gap-10">
+        <ul className="flex gap-4 xl:gap-10 text-pink-500">
+          <li onClick={closeMenu}>
+            <Link to="/">Home</Link>
+          </li>
+          <li onClick={closeMenu}>
+            <Link to="#about">About</Link>
+          </li>
+          <li onClick={closeMenu}>
+            <Link to="#project">Projects</Link>
+          </li>
+          <li onClick={closeMenu}>
+            <Link to="#contacts">Contacts</Link>
+          </li>
+        </ul>
       </div>
-    </>
+    </div>
   );
 };
 

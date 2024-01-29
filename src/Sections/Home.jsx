@@ -10,8 +10,8 @@ import { useTypingEffect } from "../components/typing-effect";
 
 const Section = styled.div`
   height: 100vh;
-  background-color: #d6cbbc;
-  margin: auto;
+  background-color: #f2e4e6;
+  padding-top: 100px;
 
   scroll-snap-align: center;
 
@@ -49,14 +49,11 @@ const Home = () => {
       <Section id="home" className="h-[100vh] background">
         <Navbar />
 
-        <div className="h-70% mx-6 mt-12 flex flex-col gap-12 ">
-          <div className="flex  gap-4 flex-col">
-            <div
-              className="text-[20px]  flex font-bold"
-              style={{ display: "inline" }}
-            >
+        <div className="h-70% mx-6 2xl:mx-96 xl:mx-64 md:mx-24 lg:mx-36  sm:mx-20 mt-12 lg:mt-20 xl:mt-36 sm:mt-24 grid sm:grid-cols-2  grid-col gap-12  ">
+          <div className=" grid   grid-col  gap-4">
+            <div className="  flex font-bold" style={{ display: "inline" }}>
               <p
-                className="self-center text-pink-700"
+                className="text-[20px] sm:text-[25px] xl:text-[50px] lg:text-[35px] self-center text-pink-700"
                 style={{ display: "inline" }}
               >
                 Hi
@@ -69,18 +66,21 @@ const Home = () => {
                 ></img>
               </p>
 
-              <p className="text-[25px] text-pink-700 font-semibold">
-                I'm NIHARIKA DEB
+              <p className="text-[25px] lg:text-[50px] xl:text-[70px] sm:text-[35px] text-pink-700 font-bold">
+                I'm Niharika Deb
               </p>
-              <p className="text-[25px] font-semibold text-pink-700">{text}</p>
+              <p className="text-[25px] lg:text-[50px] sm:text-[35px] xl:text-[70px] sm:whitespace-nowrap font-bold text-pink-700">
+                {text}
+              </p>
             </div>
             <div>
-              <p className=" leading-tight   text-gray-600 ">
+              <p className=" leading-tight xl:text-[25px] lg:text-[20px] tracking-wider text-[]  text-gray-700 w-auto sm:w-[400px] md:w-[500px] lg:w-[600px] xl:w-[800px]  ">
                 A skilled and passionate developer with experience in creationg
                 visulally appealing and user-friendly websites
               </p>
             </div>
-            <div className="flex gap-3 text-pink-700 ">
+
+            <div className="flex gap-3 text-pink-700  mt-5 ">
               <a href={linkedinProfileUrl}>
                 <IoLogoLinkedin className="h-5 w-5" />
               </a>
@@ -90,24 +90,24 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="self-center">
+          <div className="justify-self-center sm:justify-self-end">
             <img
               style={{
                 boxShadow: "-3px -6px 29px -1px rgba(219, 39, 119, 0.75)", // Tailwind pink-500 color
                 display: setup === true ? "none" : "block",
               }}
-              className="h-40 w-40 rounded-full "
+              className="h-40 w-40 lg:h-64 lg:w-64 rounded-full "
               src="face.png"
             ></img>
           </div>
 
-          <div className="self-center">
-            <div className="flex gap-10 items-end mt-12  ">
-              <img className="h-8  w-8" src="html-5.png"></img>
-              <img className="h-8  w-8" src="css-3.png"></img>
-              <img className="h-8  w-8" src="js.png"></img>
-              <img className="h-8  w-8" src="react.png"></img>
-              <img className="h-8  w-8" src="redux.png"></img>
+          <div>
+            <div className="flex z-[-10] gap-10 xl:gap-16  items-end mt-12  ">
+              <img className="h-8 xl:w-10 xl:h-10  w-8" src="html-5.png"></img>
+              <img className="h-8  xl:w-10 xl:h-10 w-8" src="css-3.png"></img>
+              <img className="h-8 xl:w-10 xl:h-10 w-8" src="js.png"></img>
+              <img className="h-8 xl:w-10 xl:h-10 w-8" src="react.png"></img>
+              <img className="h-8 xl:w-10 xl:h-10 w-8" src="redux.png"></img>
             </div>
           </div>
         </div>

@@ -100,9 +100,6 @@ const Projects = () => {
         <p className="text-[18px]  lg:text-[60px] text-pink-500  font-bold">
           PROJECTS
         </p>
-        <p className="mt-2 animate-pulse leading-[20.8px] font-semibold">
-          Each project is a unique piece of development
-        </p>
       </div>
 
       <div className="mx-auto xl:w-[1200px]  relative md:w-[700px] p-10 grid gap-[50px] md:gap-[100px]">
@@ -131,12 +128,12 @@ const Projects = () => {
           {/* 2 */}
 
           <LineA className="w-[20px] absolute md:left-[350px] md:h-[100px] xl:ml-[220px]">
-            <div className="h-60 w-2 animate-line  bg-red-500"></div>
+            <div className="h-60 w-2 animate-line  bg-pink-700"></div>
           </LineA>
 
           <div className="grid grid-cols-1 xl:w-[500px]">
             <div className="grid grid-cols-1  justify-items-center">
-              <p className="font-semibold text-pink-500">PIZZA </p>
+              <p className="font-semibold text-pink-700">PIZZA </p>
               <p className="text-[12px] xl:w-[500px] sm:text-[14px] p-2">
                 This application enables users to order their desired pizza,
                 customize the order according to their preferences, and have it
@@ -177,12 +174,12 @@ const Projects = () => {
             </div>
           </Tilt>
           <LineB className="w-[20px] md:ml-[310px] xl:ml-[520px] absolute md:ml-[300px xl:ml-[530px] ">
-            <div className="h-60 w-2 animate-line bg-red-500"></div>
+            <div className="h-60 w-2 animate-line bg-pink-700"></div>
           </LineB>
           {/* 2 */}
           <div className="grid grid-cols-1 sm:order-1 ">
             <div className="grid grid-cols-1  justify-items-center">
-              <p className="font-bold text-pink-500">BURGER </p>
+              <p className="font-bold text-pink-700">BURGER </p>
               <p className="text-[12px] xl:w-[500px] sm:text-[14px] p-2">
                 This application enables users to order their desired pizza,
                 customize the order according to their preferences, and have it
@@ -224,11 +221,11 @@ const Projects = () => {
           </Tilt>
           {/* 2 */}
           <LineC className="w-[20px] absolute md:left-[310px] xl:ml-[240px]">
-            <div className="h-60 w-2 animate-line bg-red-500"></div>
+            <div className="h-60 w-2 animate-line bg-pink-700"></div>
           </LineC>
           <div className="grid grid-cols-1 ">
             <div className="grid grid-cols-1  justify-items-center ">
-              <p className="font-bold text-pink-500">RABRI </p>
+              <p className="font-bold text-pink-700">RABRI </p>
               <p className="text-[12px] xl:w-[500px] sm:text-[14px ] p-2">
                 This application enables users to order their desired pizza,
                 customize the order according to their preferences, and have it
@@ -255,7 +252,7 @@ const Projects = () => {
           </div>
         </ProjectC>
 
-        <ProjectD className="grid grid-cols-1 sm:grid-cols-2 sm:gap-8 mb-10">
+        <ProjectB className="grid grid-cols-1 sm:grid-cols-2 sm:gap-8 relative">
           {/* 1 */}
           <Tilt className="sm:order-2">
             <div
@@ -263,20 +260,19 @@ const Projects = () => {
               style={{ boxShadow: "14px -13px 80px 1px rgba(0, 0, 0, 0.404)" }}
             >
               <img
-                className=" xl:w-[500px] mb-2 rounded-2xl"
+                className="mb-2 rounded-2xl xl:w-[500px]"
                 src="table.avif"
               ></img>
             </div>
           </Tilt>
-          <LineD className="w-[20px] md:ml-[340px] xl:ml-[250px] absolute left-[330px]">
-            <div className="h-60 w-2 animate-line bg-red-500"></div>
-          </LineD>
-
+          <LineB className="w-[20px] md:ml-[310px] xl:ml-[520px] absolute md:ml-[300px xl:ml-[530px] ">
+            <div className="h-60 w-2 animate-line bg-pink-700"></div>
+          </LineB>
           {/* 2 */}
-          <div className="grid grid-cols-1 ">
-            <div className="grid grid-cols-1  justify-items-center ">
-              <p className="font-bold text-pink-500">ORANGE </p>
-              <p className="text-[14px] xl:w-[500px] sm:text-[14px] p-2">
+          <div className="grid grid-cols-1 sm:order-1 ">
+            <div className="grid grid-cols-1  justify-items-center">
+              <p className="font-bold text-pink-700">BURGER </p>
+              <p className="text-[12px] xl:w-[500px] sm:text-[14px] p-2">
                 This application enables users to order their desired pizza,
                 customize the order according to their preferences, and have it
                 delivered to their location. It has multiple features, one of
@@ -289,7 +285,7 @@ const Projects = () => {
               <p>Css</p>
             </div>
 
-            <div className="flex gap-8 justify-center sm:p-2 p-4 font-bold">
+            <div className="flex gap-8 justify-center sm:p-2 font-bold pb-2">
               <div className="flex items-center gap-2">
                 <p>Code</p>
                 <FaGithub />
@@ -300,7 +296,7 @@ const Projects = () => {
               </div>
             </div>
           </div>
-        </ProjectD>
+        </ProjectB>
       </div>
     </Section>
   );

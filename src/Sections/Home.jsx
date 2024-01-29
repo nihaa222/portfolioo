@@ -49,7 +49,7 @@ const Home = () => {
       <Section id="home" className="h-[100vh] background">
         <Navbar />
 
-        <div className="h-70% mx-6 mt-10 flex flex-col gap-12 ">
+        <div className="h-70% mx-6 mt-12 flex flex-col gap-12 ">
           <div className="flex  gap-4 flex-col">
             <div
               className="text-[20px]  flex font-bold"
@@ -84,20 +84,20 @@ const Home = () => {
               </a>
             </div>
           </div>
+
           <div className="self-center">
-            <div>
-              <img
-                style={{
-                  boxShadow: "-3px -6px 29px -1px rgba(219, 39, 119, 0.75)", // Tailwind pink-500 color
-                  display: setup === true ? "none" : "block",
-                }}
-                className="h-40 w-40 rounded-full "
-                src="face.png"
-              ></img>
-            </div>
+            <img
+              style={{
+                boxShadow: "-3px -6px 29px -1px rgba(219, 39, 119, 0.75)", // Tailwind pink-500 color
+                display: setup === true ? "none" : "block",
+              }}
+              className="h-40 w-40 rounded-full "
+              src="face.png"
+            ></img>
           </div>
+
           <div>
-            <div className="flex gap-4 items-end ">
+            <div className="flex gap-4 items-end mt-12 ">
               <img className="h-8  w-8" src="html-5.png"></img>
               <img className="h-8  w-8" src="css-3.png"></img>
               <img className="h-8  w-8" src="js.png"></img>

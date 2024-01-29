@@ -97,7 +97,7 @@ const Home = () => {
           </div>
 
           <div>
-            <div className="flex gap-4 items-end mt-12 ">
+            <div className="flex gap-9 items-end mt-12 ">
               <img className="h-8  w-8" src="html-5.png"></img>
               <img className="h-8  w-8" src="css-3.png"></img>
               <img className="h-8  w-8" src="js.png"></img>

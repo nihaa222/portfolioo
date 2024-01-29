@@ -112,7 +112,7 @@ const Navbar = () => {
         {isMenuOpen ? (
           <div className="fixed top-0 left-0 h-screen w-screen bg-green-50">
             <div className="sm:hidden p-6">
-              <button className="fixed  " onClick={Close}>
+              <button className="fixed " onClick={Close}>
                 <IoClose />
               </button>
             </div>

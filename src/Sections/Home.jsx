@@ -55,7 +55,10 @@ const Home = () => {
               className="text-[20px]  flex font-bold"
               style={{ display: "inline" }}
             >
-              <p className="self-center" style={{ display: "inline" }}>
+              <p
+                className="self-center text-pink-700"
+                style={{ display: "inline" }}
+              >
                 Hi
               </p>
               <p style={{ display: "inline" }}>
@@ -66,21 +69,23 @@ const Home = () => {
                 ></img>
               </p>
 
-              <p className="text-[25px] font-semibold">I'm NIHARIKA DEB</p>
-              <p className="text-[25px] font-semibold ">{text}</p>
+              <p className="text-[25px] text-pink-700 font-semibold">
+                I'm NIHARIKA DEB
+              </p>
+              <p className="text-[25px] font-semibold text-pink-700">{text}</p>
             </div>
             <div>
-              <p className=" leading-tight  text-gray-600 ">
+              <p className=" leading-tight   text-gray-600 ">
                 A skilled and passionate developer with experience in creationg
                 visulally appealing and user-friendly websites
               </p>
             </div>
             <div className="flex gap-3 text-pink-700 ">
               <a href={linkedinProfileUrl}>
-                <IoLogoLinkedin />
+                <IoLogoLinkedin className="h-5 w-5" />
               </a>
               <a href={gitProfileUrl}>
-                <FaGithub />
+                <FaGithub className="h-5 w-5" />
               </a>
             </div>
           </div>
@@ -96,8 +101,8 @@ const Home = () => {
             ></img>
           </div>
 
-          <div>
-            <div className="flex gap-9 items-end mt-12 ">
+          <div className="self-center">
+            <div className="flex gap-10 items-end mt-12  ">
               <img className="h-8  w-8" src="html-5.png"></img>
               <img className="h-8  w-8" src="css-3.png"></img>
               <img className="h-8  w-8" src="js.png"></img>

@@ -29,16 +29,18 @@
   </head>
   <body>
     <form
-      name="contact w1"
+      name="contact-v1"
       netlify
       netlify-honeypot="bot-field"
       action="/"
       hidden
     >
-      <input type="text" name="name" />
-      <input type="text" name="email" />
-      <textarea name="message"></textarea>
+      <input type="text" name="first-name" />
+      <input type="text" name="last-name" />
+      <input id="email" type="email" name="email" />
+      <textarea name="comments"></textarea>
     </form>
+
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>

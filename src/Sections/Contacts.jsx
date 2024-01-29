@@ -20,7 +20,7 @@ const Contacts = () => {
             CONTACT ME!
           </p>
           <form
-            name="contact w1"
+            name="contact v1"
             method="post"
             data-netlify="true"
             onSubmit="submit"

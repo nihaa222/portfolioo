@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import ContactForm from "../components/form";
 
 const Section = styled.div`
   height: 100vh;
@@ -20,7 +19,43 @@ const Contacts = () => {
           <p className="text-center xs:text-[30px] text-[18px] mt-4 z-10 text-white">
             CONTACT ME!
           </p>
-          <ContactForm />
+          <form
+            name="contact v1"
+            method="post"
+            data-netlify="true"
+            onSubmit="submit"
+          >
+            <input type="hidden" name="form-name" value="contact-v1" />
+            <div>
+              <label>
+                First Name
+                <br />
+                <input type="text" name="first-name" />
+              </label>
+            </div>
+            <div>
+              <label>
+                Last Name
+                <br />
+                <input type="text" name="last-name" />
+              </label>
+            </div>
+            <div>
+              <label htmlFor="email">
+                Email
+                <br />
+                <input id="email" type="email" name="email" />
+              </label>
+            </div>
+            <div>
+              <label>
+                Any Comments?
+                <br />
+                <textArea name="comments"></textArea>
+              </label>
+            </div>
+            <button type="submit">send</button>
+          </form>
         </div>
       </div>
     </Section>

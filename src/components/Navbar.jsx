@@ -106,18 +106,18 @@ const Navbar = () => {
   };
   return (
     <>
-      <div className="flex p-4 items-center justify-between">
+      <div className="flex p-4 font-bold items-center justify-between text-pink-700">
         <div>Niharika Deb</div>
 
         {isMenuOpen ? (
           <div className="fixed top-0 left-0 h-screen w-screen bg-green-50">
             <div className="sm:hidden p-6">
-              <button className="fixed " onClick={Close}>
+              <button className="fixed  " onClick={Close}>
                 <IoClose />
               </button>
             </div>
             <div className=" sm:flex">
-              <ul className="flex gap-4 flex-col items-center ">
+              <ul className="flex gap-4 font-bold text-pink-700 flex-col items-center ">
                 {" "}
                 <li onClick={Close}>
                   <Link to="/">Home</Link>
@@ -143,7 +143,7 @@ const Navbar = () => {
         )}
 
         <div className="hidden sm:flex">
-          <ul className="flex gap-4">
+          <ul className="flex gap-4 text-pink-500">
             <li onClick={Close}>
               <Link to="/">Home</Link>
             </li>

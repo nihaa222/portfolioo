@@ -49,7 +49,7 @@ const Home = () => {
       <Section id="home" className="h-[100vh] background">
         <Navbar />
 
-        <div className="h-70% m-6">
+        <div className="h-70% m-6 flex flex-col gap-12 items-center">
           <div className="flex gap-4 flex-col">
             <div>
               <span
@@ -72,13 +72,25 @@ const Home = () => {
                 visulally appealing and user-friendly websites
               </p>
             </div>
-            <div className="flex gap-3 ">
+            <div className="flex gap-3 text-pink-700 ">
               <a href={linkedinProfileUrl}>
                 <IoLogoLinkedin />
               </a>
               <a href={gitProfileUrl}>
                 <FaGithub />
               </a>
+            </div>
+          </div>
+          <div>
+            <div>
+              <img
+                style={{
+                  boxShadow: "-3px -6px 29px -1px rgba(219, 39, 119, 0.75)", // Tailwind pink-500 color
+                  display: setup === true ? "none" : "block",
+                }}
+                className="h-40 w-40 rounded-full "
+                src="face.png"
+              ></img>
             </div>
           </div>
         </div>

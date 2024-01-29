@@ -21,7 +21,8 @@ const Contacts = () => {
           </p>
           <form
             name="contact"
-            action="POST"
+            action="/"
+            method="POST"
             data-netlify="true"
             onSubmit="submit"
           >

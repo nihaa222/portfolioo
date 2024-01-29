@@ -52,12 +52,10 @@ const Home = () => {
         <div className="h-70% m-6 flex flex-col gap-12 items-center">
           <div className="flex  gap-4 flex-col">
             <div
-              className="text-[20px] flex font-bold"
+              className="text-[20px]  flex font-bold"
               style={{ display: "inline" }}
             >
-              <p style={{ display: "inline" }} className="ml-[100px]">
-                Hi
-              </p>
+              <p style={{ display: "inline" }}>Hi</p>
               <p style={{ display: "inline" }}>
                 <img
                   style={{ display: "inline" }}
@@ -66,10 +64,8 @@ const Home = () => {
                 ></img>
               </p>
 
-              <p className="text-[25px] font-semibold ml-[25px]">
-                I'm NIHARIKA DEB
-              </p>
-              <p className="text-[25px] font-semibold ml-[20px]">{text}</p>
+              <p className="text-[25px] font-semibold">I'm NIHARIKA DEB</p>
+              <p className="text-[25px] font-semibold ">{text}</p>
             </div>
             <div>
               <p className=" leading-tight  text-gray-600 ">
@@ -96,6 +92,15 @@ const Home = () => {
                 className="h-40 w-40 rounded-full "
                 src="face.png"
               ></img>
+            </div>
+          </div>
+          <div>
+            <div className="flex gap-4">
+              <img className="h-8  w-8" src="html-5.png"></img>
+              <img className="h-8  w-8" src="css-3.png"></img>
+              <img className="h-8  w-8" src="js.png"></img>
+              <img className="h-8  w-8" src="react.png"></img>
+              <img className="h-8  w-8" src="redux.png"></img>
             </div>
           </div>
         </div>

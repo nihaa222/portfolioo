@@ -3,58 +3,97 @@ import styled from "styled-components";
 const Section = styled.div`
   height: 100vh;
   margin-top: 10px;
-  padding-top: 10px;
+  padding-top: 100px;
   scroll-snap-align: center;
 `;
 
 const Contacts = () => {
   return (
-    <Section id="contacts" className="xs:pt-[30px]">
+    <Section id="contacts" className="xs:pt-[20px]">
       <p className="text-center text-bold text-pink-500 font-bold lg:text-[60px] animate-pixi xs:text-[50px] text-[35px] xs:mb-2 mb-[20px]">
         Get in touch ?
       </p>
 
-      <div className="h-full mx-auto flex xs:pt-[30px] justify-center">
-        <div className="xs:h-[600px] shadow-2xl lg:w-[800px] h-[550px] xs:w-[320px] w-[300px] z-1 rounded-3xl bg-opacity-20 bg-gradient-to-r from-463f3a via-#E9EB9E to-pink-600">
-          <p className="text-center xs:text-[30px] text-[18px] mt-4 z-10 text-white">
+      <div className="h-full mx-auto flex xs:pt-[30px]  lg:pt-[50px] justify-center">
+        <div className="xs:h-[600px] text-gray-700 shadow-2xl lg:w-[800px] h-[550px] xs:w-[300px] w-[300px] z-1 rounded-3xl bg-opacity-20 bg-gradient-to-r from-463f3a via-#E9EB9E to-pink-600">
+          {/* <p className="text-center xs:text-[30px] text-[18px] mt-4 z-10 text-white">
             CONTACT ME!
-          </p>
+          </p> */}
           <form
-            name="contact v1"
+            className="p-4 lg:pl-20 lg:pr-20 pt-24 lg:pt-20 "
+            name="contact "
             method="post"
             data-netlify="true"
             onSubmit="submit"
           >
-            <input type="hidden" name="form-name" value="contact-v1" />
-            <div>
-              <label>
-                First Name
-                <br />
-                <input type="text" name="first-name" />
-              </label>
+            <input required type="hidden" name="form-name" value="contact-v1" />
+            <div className="grid grid-cols-1 gap-4 lg:gap-7 lg:grid-cols-2 ">
+              <div>
+                <label>
+                  First Name
+                  <br />
+                  <input
+                    required
+                    className="rounded-md w-full h-8 lg:h-10 p-2 focus:outline-none focus:border-gray-200"
+                    type="text"
+                    name="first-name"
+                  />
+                </label>
+              </div>
+              <div>
+                <label>
+                  Last Name
+                  <br />
+                  <input
+                    required
+                    className="rounded-md focus:outline-none lg:h-10  w-full h-8 p-2"
+                    type="text"
+                    name="last-name"
+                  />
+                </label>
+              </div>
+              <div>
+                <label>
+                  Phone Number
+                  <br />
+                  <input
+                    required
+                    className="rounded-md  focus:outline-none lg:h-10 w-full h-8 p-2"
+                    type="number"
+                    name="phone"
+                  />
+                </label>
+              </div>
+              <div>
+                <label htmlFor="email">
+                  Email
+                  <br />
+                  <input
+                    required
+                    className="rounded-md focus:outline-none lg:h-10 w-full h-8 p-2"
+                    id="email"
+                    type="email"
+                    name="email"
+                  />
+                </label>
+              </div>
+              <div className="lg:col-span-2">
+                <label>
+                  Any Comments?
+                  <br />
+                  <textArea
+                    className="required rounded-md focus:outline-none lg:h-36  w-full h-20 p-2"
+                    name="comments"
+                  ></textArea>
+                </label>
+              </div>
+              <button
+                className="h-10 w-20 px-4 py-2 mr-[0px] lg:mr-[-50px] mt-10 lg:mt-10 rounded-xl justify-self-center lg:justify-self-end bg-white hover:bg-gray-100"
+                type="submit"
+              >
+                send
+              </button>
             </div>
-            <div>
-              <label>
-                Last Name
-                <br />
-                <input type="text" name="last-name" />
-              </label>
-            </div>
-            <div>
-              <label htmlFor="email">
-                Email
-                <br />
-                <input id="email" type="email" name="email" />
-              </label>
-            </div>
-            <div>
-              <label>
-                Any Comments?
-                <br />
-                <textArea name="comments"></textArea>
-              </label>
-            </div>
-            <button type="submit">send</button>
           </form>
         </div>
       </div>

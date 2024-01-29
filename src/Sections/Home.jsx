@@ -28,10 +28,11 @@ const Section = styled.div`
 
 // export default Home;
 
-const Home = () => {
+const Home = ({ isScrolled }) => {
   const text = useTypingEffect("Front-End Developer", 200);
   const linkedinProfileUrl = "https://www.linkedin.com/in/niharika-deb/";
   const gitProfileUrl = "https://github.com/nihaa222";
+
   const [showText, setShowText] = useState(false);
   const setup = useSelector((state) => state.setup.value);
   useEffect(() => {
@@ -47,7 +48,7 @@ const Home = () => {
   return (
     <>
       <Section id="home" className="h-[100vh] background">
-        <Navbar />
+        <Navbar isScrolled={isScrolled} />
 
         <div className="h-70% mx-6 2xl:mx-96 xl:mx-64 md:mx-24 lg:mx-36  sm:mx-20 mt-12 lg:mt-20 xl:mt-36 sm:mt-24 grid sm:grid-cols-2  grid-col gap-12  ">
           <div className=" grid   grid-col  gap-4">
@@ -95,9 +96,10 @@ const Home = () => {
               style={{
                 boxShadow: "-3px -6px 29px -1px rgba(219, 39, 119, 0.75)", // Tailwind pink-500 color
                 display: setup === true ? "none" : "block",
+                objectFit: "cover",
               }}
               className="h-40 w-40 lg:h-64 lg:w-64 rounded-full "
-              src="face.png"
+              src="profile-removebg-preview.png"
             ></img>
           </div>
 

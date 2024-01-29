@@ -11,7 +11,7 @@ const Container = styled.div`
   height: 100vh;
 
   scroll-snap-type: y mandatory;
-  /* background-color: #d6cbbc; */
+  background-color: #d6cbbc;
   background-color: #f2e4e6;
   scroll-behavior: smooth;
   overflow-y: auto;
@@ -67,8 +67,25 @@ const Load = styled.div`
 `;
 
 function App() {
+  const [isScrolled, setScrolled] = useState(false);
   const [loading, setLoading] = useState(true);
   // const [showWelcome, setShowWelcome] = useState(true);
+  useEffect(() => {
+    const handleScroll = () => {
+      console.log("Scrolling...");
+      const scrolled = window.scrollY > 0;
+      console.log("Scrolled:", scrolled);
+      setScrolled(scrolled);
+    };
+
+    console.log("Adding scroll event listener...");
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      console.log("Removing scroll event listener...");
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   useEffect(() => {
     // Simulating a delay (you can replace this with your actual data fetching logic)
@@ -93,7 +110,7 @@ function App() {
           </Loader>
         ) : null}
         <Container>
-          <Home />
+          <Home isScrolled={isScrolled} />
           <About />
           <Projects />
           <Contacts />

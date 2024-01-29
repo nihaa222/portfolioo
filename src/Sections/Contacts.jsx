@@ -3,13 +3,13 @@ import styled from "styled-components";
 const Section = styled.div`
   height: 100vh;
   margin-top: 10px;
-  padding-top: 100px;
+  padding-top: 80px;
   scroll-snap-align: center;
 `;
 
 const Contacts = () => {
   return (
-    <Section id="contacts" className="xs:pt-[20px]">
+    <Section id="contacts" className="xs:pt-[10px]">
       <p className="text-center text-bold text-pink-500 font-bold lg:text-[60px] animate-pixi xs:text-[50px] text-[35px] xs:mb-2 mb-[20px]">
         Get in touch ?
       </p>
@@ -29,7 +29,7 @@ const Contacts = () => {
             <input required type="hidden" name="form-name" value="contact-v1" />
             <div className="grid grid-cols-1 gap-4 lg:gap-7 lg:grid-cols-2 ">
               <div>
-                <label>
+                <label className="pb-3 font-semibold  text-pink-400">
                   First Name
                   <br />
                   <input
@@ -41,7 +41,7 @@ const Contacts = () => {
                 </label>
               </div>
               <div>
-                <label>
+                <label className="font-semibold  text-pink-400">
                   Last Name
                   <br />
                   <input
@@ -53,7 +53,7 @@ const Contacts = () => {
                 </label>
               </div>
               <div>
-                <label>
+                <label className="font-semibold  text-pink-400">
                   Phone Number
                   <br />
                   <input
@@ -65,7 +65,7 @@ const Contacts = () => {
                 </label>
               </div>
               <div>
-                <label htmlFor="email">
+                <label htmlFor="email" className="font-semibold  text-pink-400">
                   Email
                   <br />
                   <input
@@ -78,17 +78,17 @@ const Contacts = () => {
                 </label>
               </div>
               <div className="lg:col-span-2">
-                <label>
+                <label className="font-semibold text-pink-400">
                   Any Comments?
                   <br />
                   <textArea
-                    className="required rounded-md focus:outline-none lg:h-36  w-full h-20 p-2"
+                    className="required rounded-m focus:outline-none lg:h-36  w-full h-20 p-2"
                     name="comments"
                   ></textArea>
                 </label>
               </div>
               <button
-                className="h-10 w-20 px-4 py-2 mr-[0px] lg:mr-[-50px] mt-10 lg:mt-10 rounded-xl justify-self-center lg:justify-self-end bg-white hover:bg-gray-100"
+                className="h-10 w-20 px-4 py-2 font-semibold mr-[0px] lg:mr-[-50px] mt-10 lg:mt-10 rounded-xl justify-self-center lg:justify-self-end bg-white hover:bg-gray-100"
                 type="submit"
               >
                 send

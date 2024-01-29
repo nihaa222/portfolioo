@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import ContactForm from "../components/form";
 
 const Section = styled.div`
   height: 100vh;
@@ -19,107 +20,7 @@ const Contacts = () => {
           <p className="text-center xs:text-[30px] text-[18px] mt-4 z-10 text-white">
             CONTACT ME!
           </p>
-          {/* <form name="contact" method="POST" data-netlify="true">
-            <div className="xs:gap-5 gap-6 lg:grid-cols-2 grid grid-cols-1 mx-[40px] xs:mx-[30px] mt-5 xs:mt-9 text-white">
-              <div className="lg:gap-4">
-                <label htmlFor="name" className="block">
-                  Name
-                  <input
-                    id="name"
-                    name="name"
-                    required
-                    type="text"
-                    className="lg:p-2 text-black focus:outline-none focus:outline-blue-50 rounded-md w-68 input-field w-full"
-                  />
-                </label>
-              </div>
-              <div>
-                <label htmlFor="last" className="block">
-                  Last Name
-                  <input
-                    id="last"
-                    name="last"
-                    required
-                    type="text"
-                    className="lg:p-2 text-black focus:outline-none focus:outline-blue-50 rounded-md input-field w-full"
-                  />
-                </label>
-              </div>
-              <div className="flex flex-col">
-                <label className="block">
-                  Email
-                  <input
-                    type="email"
-                    name="email"
-                    required
-                    className="lg:p-2 text-black focus:outline-none focus:outline-blue-50 rounded-md input-field w-full"
-                  />
-                </label>
-              </div>
-
-              <div>
-                <label className="block">
-                  Mobile
-                  <input
-                    type="number"
-                    name="number"
-                    required
-                    className="lg:p-2 rounded-md text-black focus:outline-blue-50 input-field w-full"
-                  />
-                </label>
-              </div>
-            </div>
-            <div className="xs:mx-[30px] mx-[40px] grid grid-cols-1 mt-6 xs:mt-9 text-white gap-4">
-              <div>
-                <label>
-                  Type your text here...
-                  <textarea
-                    name="text"
-                    id="yourTextareaId"
-                    className="w-full focus:outline-none text-black focus:outline-blue-50 rounded-md h-[100px]"
-                    required
-                  ></textarea>
-                </label>
-              </div>
-              <div className="justify-self-center">
-                <button
-                  type="submit"
-                  className="bg-white hover:bg-white text-black px-8 bg-opacity-50 rounded-3xl py-2"
-                >
-                  Send
-                </button>
-              </div>
-            </div>
-          </form> */}
-          <form name="contact" method="POST" data-netlify="true">
-            <p>
-              <label>
-                Your Name: <input type="text" name="name" />
-              </label>
-            </p>
-            <p>
-              <label>
-                Your Email: <input type="email" name="email" />
-              </label>
-            </p>
-            <p>
-              <label>
-                Your Role:{" "}
-                <select name="role[]" multiple>
-                  <option value="leader">Leader</option>
-                  <option value="follower">Follower</option>
-                </select>
-              </label>
-            </p>
-            <p>
-              <label>
-                Message: <textarea name="message"></textarea>
-              </label>
-            </p>
-            <p>
-              <button type="submit">Send</button>
-            </p>
-          </form>
+        <ContactForm
         </div>
       </div>
     </Section>

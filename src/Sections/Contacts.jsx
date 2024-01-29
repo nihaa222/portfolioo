@@ -19,7 +19,7 @@ const Contacts = () => {
           <p className="text-center xs:text-[30px] text-[18px] mt-4 z-10 text-white">
             CONTACT ME!
           </p>
-          <form name="contact" action="/" method="POST" data-netlify="true">
+          {/* <form name="contact" method="POST" data-netlify="true">
             <div className="xs:gap-5 gap-6 lg:grid-cols-2 grid grid-cols-1 mx-[40px] xs:mx-[30px] mt-5 xs:mt-9 text-white">
               <div className="lg:gap-4">
                 <label htmlFor="name" className="block">
@@ -90,6 +90,35 @@ const Contacts = () => {
                 </button>
               </div>
             </div>
+          </form> */}
+          <form name="contact" method="POST" data-netlify="true">
+            <p>
+              <label>
+                Your Name: <input type="text" name="name" />
+              </label>
+            </p>
+            <p>
+              <label>
+                Your Email: <input type="email" name="email" />
+              </label>
+            </p>
+            <p>
+              <label>
+                Your Role:{" "}
+                <select name="role[]" multiple>
+                  <option value="leader">Leader</option>
+                  <option value="follower">Follower</option>
+                </select>
+              </label>
+            </p>
+            <p>
+              <label>
+                Message: <textarea name="message"></textarea>
+              </label>
+            </p>
+            <p>
+              <button type="submit">Send</button>
+            </p>
           </form>
         </div>
       </div>

@@ -50,21 +50,26 @@ const Home = () => {
         <Navbar />
 
         <div className="h-70% m-6 flex flex-col gap-12 items-center">
-          <div className="flex gap-4 flex-col">
-            <div>
-              <span
-                className="text-[20px] font-bold"
-                style={{ display: "inline" }}
-              >
+          <div className="flex  gap-4 flex-col">
+            <div
+              className="text-[20px] flex font-bold"
+              style={{ display: "inline" }}
+            >
+              <p style={{ display: "inline" }} className="ml-[100px]">
                 Hi
+              </p>
+              <p style={{ display: "inline" }}>
                 <img
                   style={{ display: "inline" }}
                   className="h-6 w-6 mb-3"
                   src="hand.png"
                 ></img>
-              </span>
-              <p className="text-[25px] font-semibold">I'm NIHARIKA DEB</p>
-              <p className="text-[25px] font-semibold">{text}</p>
+              </p>
+
+              <p className="text-[25px] font-semibold ml-[25px]">
+                I'm NIHARIKA DEB
+              </p>
+              <p className="text-[25px] font-semibold ml-[20px]">{text}</p>
             </div>
             <div>
               <p className=" leading-tight  text-gray-600 ">

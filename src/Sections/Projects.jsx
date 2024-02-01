@@ -13,7 +13,7 @@ const LineA = styled.div`
 
     width: 2px;
     background-color: red;
-    animation: lineAnimation 2s linear infinite alternate;
+    /* animation: lineAnimation 2s linear infinite alternate; */
   }
 `;
 const LineB = styled.div`
@@ -94,6 +94,8 @@ const ProjectD = styled.div`
 `;
 
 const Projects = () => {
+  const food = "https://github.com/nihaa222/Food-Blogger";
+  const fooddemo = "https://fooddy1.netlify.app/";
   return (
     <Section id="project">
       <div className=" text-center mb-[30px]  ">
@@ -120,7 +122,7 @@ const Projects = () => {
             >
               <img
                 className="mb-2 rounded-2xl xl:w-[500px]"
-                src="table.avif"
+                src="New Tab - Google Chrome 30-01-2024 00_02_42.png"
                 alt="Project Image"
               />
             </div>
@@ -128,13 +130,15 @@ const Projects = () => {
           {/* 2 */}
 
           <LineA className="w-[20px] absolute md:left-[350px] md:h-[100px] xl:ml-[220px]">
-            <div className="h-60 w-2 animate-line  bg-pink-700"></div>
+            <div className="h-60 w-2   bg-pink-700"></div>
           </LineA>
 
           <div className="grid grid-cols-1 xl:w-[500px]">
-            <div className="grid grid-cols-1  justify-items-center">
-              <p className="font-semibold text-pink-700">PIZZA </p>
-              <p className="text-[12px] xl:w-[500px] sm:text-[14px] p-2">
+            <div className="grid grid-cols-1  ">
+              <p className="font-semibold justify-self-left lg:text-[25px] text-pink-700">
+                FAST PIZZA{" "}
+              </p>
+              <p className="text-[12px] lg:text-[16px] xl:w-[500px] sm:text-[14px] p-2">
                 This application enables users to order their desired pizza,
                 customize the order according to their preferences, and have it
                 delivered to their location. It has multiple features, one of
@@ -143,18 +147,26 @@ const Projects = () => {
               </p>
             </div>
             <div className="flex p-6 xl:p-2 gap-8 justify-center xl:align-center font-bold">
-              <p>React</p>
-              <p>Css</p>
+              <p>
+                <img className="h-8 w-15" src="react.png"></img>
+              </p>
+              <p>
+                <img className="h-8 w-15" src="th-removebg-preview.png"></img>
+              </p>
             </div>
 
             <div className="flex gap-8 justify-center p-4 items-center  sm:p-2 font-bold">
               <div className="flex items-center gap-2">
                 <p>Code</p>
-                <FaGithub />
+                <a className="cursor" href={food}>
+                  <FaGithub />
+                </a>
               </div>
               <div className="flex items-center gap-2">
                 <p>Live Demo</p>
-                <PiArrowSquareOutBold />
+                <a className="cursor" href={fooddemo}>
+                  <PiArrowSquareOutBold />
+                </a>
               </div>
             </div>
           </div>
@@ -169,28 +181,34 @@ const Projects = () => {
             >
               <img
                 className="mb-2 rounded-2xl xl:w-[500px]"
-                src="table.avif"
+                src="reactapp.png"
               ></img>
             </div>
           </Tilt>
           <LineB className="w-[20px] md:ml-[310px] xl:ml-[520px] absolute md:ml-[300px xl:ml-[530px] ">
-            <div className="h-60 w-2 animate-line bg-pink-700"></div>
+            <div className="h-60 w-2  bg-pink-700"></div>
           </LineB>
           {/* 2 */}
           <div className="grid grid-cols-1 sm:order-1 ">
             <div className="grid grid-cols-1  justify-items-center">
-              <p className="font-bold text-pink-700">BURGER </p>
-              <p className="text-[12px] xl:w-[500px] sm:text-[14px] p-2">
-                This application enables users to order their desired pizza,
-                customize the order according to their preferences, and have it
-                delivered to their location. It has multiple features, one of
-                which involves geolocation to fetch the current location of the
-                user.
+              <p className="font-bold mr-0 lg:mr-12 lg:text-[25px] text-pink-700 justify-self-end">
+                GROW{" "}
+              </p>
+              <p className="text-[12px]   lg:text-[16px] xl:w-[500px] sm:text-[14px] p-2">
+                This represents a fully responsive landing page for a finance
+                enterprise, meticulously crafted with an aesthetically pleasing
+                user interface that seamlessly adapts to various screen sizes
+                and devices, ensuring an engaging and visually compelling
+                experience for visitors.
               </p>
             </div>
             <div className="flex p-6 gap-8 justify-center font-bold">
-              <p>React</p>
-              <p>Css</p>
+              <p>
+                <img className="h-8 w-15" src="react.png"></img>
+              </p>
+              <p>
+                <img className="h-8 w-15" src="th-removebg-preview.png"></img>
+              </p>
             </div>
 
             <div className="flex gap-8 justify-center sm:p-2 font-bold pb-2">
@@ -200,7 +218,9 @@ const Projects = () => {
               </div>
               <div className="flex items-center gap-2">
                 <p>Live Demo</p>
-                <PiArrowSquareOutBold />
+                <a href="https://demoyd.netlify.app/">
+                  <PiArrowSquareOutBold />
+                </a>
               </div>
             </div>
           </div>
@@ -211,32 +231,43 @@ const Projects = () => {
           <Tilt>
             <div
               className="xl:w-[500px]"
-              style={{ boxShadow: "14px -13px 80px 1px rgba(0, 0, 0, 0.404)" }}
+              style={{
+                boxShadow:
+                  " rounded-2xl 14px -13px 80px 1px rgba(0, 0, 0, 0.404)",
+              }}
             >
               <img
                 className="mb-2 xl:w-[500px] rounded-2xl"
-                src="table.avif"
+                src="ecommerce.png"
               ></img>
             </div>
           </Tilt>
           {/* 2 */}
           <LineC className="w-[20px] absolute md:left-[310px] xl:ml-[240px]">
-            <div className="h-60 w-2 animate-line bg-pink-700"></div>
+            <div className="h-60 w-2  bg-pink-700"></div>
           </LineC>
           <div className="grid grid-cols-1 ">
-            <div className="grid grid-cols-1  justify-items-center ">
-              <p className="font-bold text-pink-700">RABRI </p>
-              <p className="text-[12px] xl:w-[500px] sm:text-[14px ] p-2">
-                This application enables users to order their desired pizza,
-                customize the order according to their preferences, and have it
-                delivered to their location. It has multiple features, one of
-                which involves geolocation to fetch the current location of the
-                user.
+            <div className="grid grid-cols-1   ">
+              <p className="font-bold lg:text-[25px] justify-self-start text-pink-700">
+                OREBI
+              </p>
+              <p className="text-[12px] xl:w-[500px] lg:text-[16px] sm:text-[14px ] p-2">
+                This is a meticulously designed, fully responsive ecommerce
+                website that is tailored to enhance the shopping experience, the
+                platform provides customers with the flexibility to customize
+                their purchases according to individual preferences and specific
+                requirements.
               </p>
             </div>
             <div className="flex p-6 gap-8 justify-center font-bold">
-              <p>React</p>
-              <p>Css</p>
+              <p>
+                {" "}
+                <img className="h-8 w-15" src="redux.png"></img>
+              </p>
+              <p>
+                {" "}
+                <img className="h-8 w-15" src="th-removebg-preview.png" />
+              </p>
             </div>
 
             <div className="flex gap-8 justify-center sm:p-2 p-4 font-bold">
@@ -246,7 +277,9 @@ const Projects = () => {
               </div>
               <div className="flex items-center gap-2">
                 <p>Live Demo</p>
-                <PiArrowSquareOutBold />
+                <a href="https://ecommerceforu.netlify.app/">
+                  <PiArrowSquareOutBold />
+                </a>
               </div>
             </div>
           </div>
@@ -261,28 +294,36 @@ const Projects = () => {
             >
               <img
                 className="mb-2 rounded-2xl xl:w-[500px]"
-                src="table.avif"
+                src="appframer.png"
               ></img>
             </div>
           </Tilt>
           <LineB className="w-[20px] md:ml-[310px] xl:ml-[520px] absolute md:ml-[300px xl:ml-[530px] ">
-            <div className="h-60 w-2 animate-line bg-pink-700"></div>
+            <div className="h-60 w-2  bg-pink-700"></div>
           </LineB>
           {/* 2 */}
           <div className="grid grid-cols-1 sm:order-1 ">
-            <div className="grid grid-cols-1  justify-items-center">
-              <p className="font-bold text-pink-700">BURGER </p>
-              <p className="text-[12px] xl:w-[500px] sm:text-[14px] p-2">
-                This application enables users to order their desired pizza,
-                customize the order according to their preferences, and have it
-                delivered to their location. It has multiple features, one of
-                which involves geolocation to fetch the current location of the
-                user.
+            <div className="grid grid-cols-1  ">
+              <p className="font-bold mr-0 lg:mr-12 lg:text-[25px] justify-self-end text-pink-700">
+                GIGAPLAY{" "}
+              </p>
+              <p className="text-[12px] xl:w-[500px] lg:text-[16px] sm:text-[14px] p-2">
+                Experience a captivating online journey with our fully animated
+                website, enriched with the dynamic and engaging power of Framer
+                Motion. Immerse yourself in a visually stunning landscape of
+                attractions where every page comes to life with a plethora of
+                eye-catching animations.
               </p>
             </div>
             <div className="flex p-6 gap-8 justify-center font-bold">
-              <p>React</p>
-              <p>Css</p>
+              <p>
+                {" "}
+                <img className="h-8 w-15" src="frame.png"></img>
+              </p>
+              <p>
+                {" "}
+                <img className="h-8 w-15" src="th-removebg-preview.png" />
+              </p>
             </div>
 
             <div className="flex gap-8 justify-center sm:p-2 font-bold pb-2">
@@ -292,7 +333,9 @@ const Projects = () => {
               </div>
               <div className="flex items-center gap-2">
                 <p>Live Demo</p>
-                <PiArrowSquareOutBold />
+                <a className="pointer" href="https://framerio.netlify.app/">
+                  <PiArrowSquareOutBold />
+                </a>
               </div>
             </div>
           </div>

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const Section = styled.div`
-  height: 100vh;
+  min-height: 100vh;
   margin-top: 10px;
   padding-top: 80px;
   scroll-snap-align: center;
@@ -97,6 +97,7 @@ const Contacts = () => {
           </form>
         </div>
       </div>
+      <div className="h-4 mt-[80px] w-full bg-pink-700"></div>
     </Section>
   );
 };

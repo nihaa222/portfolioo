@@ -28,7 +28,7 @@ const About = () => {
               alt="location"
             />
           </p>
-          <p className="text-gray-500 flex flex-col gap-4 md:text-start lg:text-[16px] md:mt-[10px] xl:text-[20px] xl:w-[500px] text-[12px] md:text-[18px] md:w-[700px] lg:w-[400px]">
+          <p className="text-gray-500 flex flex-col gap-4 md:text-start lg:text-[14px] md:mt-[10px] xl:text-[16px] xl:w-[500px] text-[12px] md:text-[18px] md:w-[700px] lg:w-[400px]">
             {/* As a junior Front-End Developer.I possess on impressive arsenal of
             skills in HTML,CSS, javascrip, React,Tailwind and Redux. I excel in
             designing and maintaining responsive websites that after a smooth

@@ -10,7 +10,9 @@
 body {
   font-family: Playfair Display;
 }
-
+.pointer {
+  cursor: pointer;
+}
 .myname {
   color: red;
 }

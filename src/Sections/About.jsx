@@ -37,17 +37,19 @@ const About = () => {
             cutting-edge development tools and techniques. I am also a team
             player who thrives in collaborating with cross-functional teams to
             prodice outstanding web applications */}
-            <p>
+            <p className="font-semibold">
               As a junior Front-End Developer.I possess on impressive arsenal of
               skills in HTML,CSS, javascript, React,Tailwind and Redux{" "}
             </p>
-            <p>
+            <p className="font-semibold">
               Experienced in designing and maintaining responsive websites,
               ensuring a smooth user experience.
             </p>
-            Expertise in crafting dynamic and engaging interfaces through clean
-            and optimized code, utilizing cutting-edge development tools and
-            techniques.
+            <p className="font-semibold">
+              Expertise in crafting dynamic and engaging interfaces through
+              clean and optimized code, utilizing cutting-edge development tools
+              and techniques.
+            </p>
           </p>
         </div>
       </div>

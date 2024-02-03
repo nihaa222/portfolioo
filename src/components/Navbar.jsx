@@ -20,11 +20,11 @@ const Navbar = ({ isScrolled }) => {
 
   return (
     <div
-      className={`flex p-6 a fixed w-full sm:bg-white z-50 font-bold items-center justify-between xl:p-10 lg:text-[20px] top-0 left-0 text-pink-500 ${
+      className={`flex p-6 a fixed w-full sm:bg-white z-50 font-bold items-center justify-between xl:p-8 lg:text-[20px] top-0 left-0 text-pink-500 ${
         isScrolled ? "bg-gray-400" : "bg-#e5b1b9;"
       }`}
     >
-      <div className="fixed top-3 lg:top-5 pointer">
+      <div className="fixed top-3 lg:top-3 pointer">
         <Link to="#home">Niharika Deb</Link>
       </div>
 
@@ -60,7 +60,7 @@ const Navbar = ({ isScrolled }) => {
         </div>
       )}
 
-      <div className="hidden fixed right-10 top-5 sm:flex  z-50 xl:gap-10">
+      <div className="hidden fixed right-10 top-3 sm:flex  z-50 xl:gap-10">
         <ul className="flex gap-4 xl:gap-10 text-pink-500">
           <li onClick={closeMenu}>
             <Link to="#home">Home</Link>

@@ -129,8 +129,8 @@ const Projects = () => {
           </Tilt>
           {/* 2 */}
 
-          <LineA className="w-[20px] absolute md:left-[350px] md:h-[100px] xl:ml-[220px]">
-            <div className="h-60 w-2   bg-pink-700"></div>
+          <LineA className="w-[40px] absolute md:left-[350px] xl:ml-[240px]">
+            <div className="h-[280px] w-2   bg-pink-700"></div>
           </LineA>
 
           <div className="grid grid-cols-1 xl:w-[500px]">
@@ -138,7 +138,7 @@ const Projects = () => {
               <p className="font-semibold justify-self-left lg:text-[25px] text-pink-700">
                 FAST PIZZA{" "}
               </p>
-              <p className="text-[12px] lg:text-[16px] xl:w-[500px] sm:text-[14px] p-2">
+              <p className="text-[12px] lg:text-[20px] xl:w-[500px] sm:text-[14px] p-2">
                 This application enables users to order their desired pizza,
                 customize the order according to their preferences, and have it
                 delivered to their location. It has multiple features, one of
@@ -148,7 +148,7 @@ const Projects = () => {
             </div>
             <div className="flex p-6 xl:p-2 gap-8 justify-center xl:align-center font-bold">
               <p>
-                <img className="h-8 w-15" src="react.png"></img>
+                <img className="h-8 w-15" src="reactnew.png"></img>
               </p>
               <p>
                 <img className="h-8 w-15" src="th-removebg-preview.png"></img>
@@ -164,7 +164,12 @@ const Projects = () => {
               </div>
               <div className="flex items-center gap-2">
                 <p>Live Demo</p>
-                <a className="cursor" href={fooddemo}>
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  className="cursor"
+                  href={fooddemo}
+                >
                   <PiArrowSquareOutBold />
                 </a>
               </div>
@@ -180,13 +185,13 @@ const Projects = () => {
               style={{ boxShadow: "14px -13px 80px 1px rgba(0, 0, 0, 0.404)" }}
             >
               <img
-                className="mb-2 rounded-2xl xl:w-[500px]"
+                className=" rounded-2xl xl:w-[500px]"
                 src="reactapp.png"
               ></img>
             </div>
           </Tilt>
-          <LineB className="w-[20px] md:ml-[310px] xl:ml-[520px] absolute md:ml-[300px xl:ml-[530px] ">
-            <div className="h-60 w-2  bg-pink-700"></div>
+          <LineB className="w-[20px] md:ml-[310px] xl:ml-[512px] absolute md:ml-[300px xl:ml-[530px] ">
+            <div className="h-[280px] w-2  bg-pink-700"></div>
           </LineB>
           {/* 2 */}
           <div className="grid grid-cols-1 sm:order-1 ">
@@ -194,17 +199,17 @@ const Projects = () => {
               <p className="font-bold mr-0 lg:mr-12 lg:text-[25px] text-pink-700 justify-self-end">
                 GROW{" "}
               </p>
-              <p className="text-[12px]   lg:text-[16px] xl:w-[500px] sm:text-[14px] p-2">
+              <p className="text-[12px] text-end mr-10 lg:text-[20px] xl:w-[500px] sm:text-[14px] p-2">
                 This represents a fully responsive landing page for a finance
                 enterprise, meticulously crafted with an aesthetically pleasing
                 user interface that seamlessly adapts to various screen sizes
-                and devices, ensuring an engaging and visually compelling
-                experience for visitors.
+                and devices, ensuring visually compelling experience for all yhe
+                visitors.
               </p>
             </div>
-            <div className="flex p-6 gap-8 justify-center font-bold">
+            <div className="flex p-2 gap-8 justify-center font-bold">
               <p>
-                <img className="h-8 w-15" src="react.png"></img>
+                <img className="h-8 w-15" src="reactnew.png"></img>
               </p>
               <p>
                 <img className="h-8 w-15" src="th-removebg-preview.png"></img>
@@ -218,7 +223,11 @@ const Projects = () => {
               </div>
               <div className="flex items-center gap-2">
                 <p>Live Demo</p>
-                <a href="https://demoyd.netlify.app/">
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://demoyd.netlify.app/"
+                >
                   <PiArrowSquareOutBold />
                 </a>
               </div>
@@ -244,25 +253,24 @@ const Projects = () => {
           </Tilt>
           {/* 2 */}
           <LineC className="w-[20px] absolute md:left-[310px] xl:ml-[240px]">
-            <div className="h-60 w-2  bg-pink-700"></div>
+            <div className="h-[280px] w-2  bg-pink-700"></div>
           </LineC>
           <div className="grid grid-cols-1 ">
             <div className="grid grid-cols-1   ">
               <p className="font-bold lg:text-[25px] justify-self-start text-pink-700">
                 OREBI
               </p>
-              <p className="text-[12px] xl:w-[500px] lg:text-[16px] sm:text-[14px ] p-2">
+              <p className="text-[12px] xl:w-[510px] lg:text-[20px] sm:text-[14px ] p-2">
                 This is a meticulously designed, fully responsive ecommerce
                 website that is tailored to enhance the shopping experience, the
                 platform provides customers with the flexibility to customize
-                their purchases according to individual preferences and specific
-                requirements.
+                their purchases according to individual preferences.
               </p>
             </div>
-            <div className="flex p-6 gap-8 justify-center font-bold">
+            <div className="flex p-2 gap-8 justify-center font-bold">
               <p>
                 {" "}
-                <img className="h-8 w-15" src="redux.png"></img>
+                <img className="h-8 w-15" src="reduxnew.png"></img>
               </p>
               <p>
                 {" "}
@@ -277,7 +285,11 @@ const Projects = () => {
               </div>
               <div className="flex items-center gap-2">
                 <p>Live Demo</p>
-                <a href="https://ecommerceforu.netlify.app/">
+                <a
+                  href="https://ecommerceforu.netlify.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <PiArrowSquareOutBold />
                 </a>
               </div>
@@ -298,8 +310,8 @@ const Projects = () => {
               ></img>
             </div>
           </Tilt>
-          <LineB className="w-[20px] md:ml-[310px] xl:ml-[520px] absolute md:ml-[300px xl:ml-[530px] ">
-            <div className="h-60 w-2  bg-pink-700"></div>
+          <LineB className="w-[20px] md:ml-[310px] xl:ml-[512px] absolute md:ml-[300px xl:ml-[530px] ">
+            <div className="h-[280px] w-2  bg-pink-700"></div>
           </LineB>
           {/* 2 */}
           <div className="grid grid-cols-1 sm:order-1 ">
@@ -307,15 +319,14 @@ const Projects = () => {
               <p className="font-bold mr-0 lg:mr-12 lg:text-[25px] justify-self-end text-pink-700">
                 GIGAPLAY{" "}
               </p>
-              <p className="text-[12px] xl:w-[500px] lg:text-[16px] sm:text-[14px] p-2">
+              <p className="text-[12px] text-end xl:w-[500px] lg:text-[20px] sm:text-[14px] p-2">
                 Experience a captivating online journey with our fully animated
                 website, enriched with the dynamic and engaging power of Framer
-                Motion. Immerse yourself in a visually stunning landscape of
-                attractions where every page comes to life with a plethora of
-                eye-catching animations.
+                Motion. Immerse yourself in a visually stunning attractions
+                where every page comes to life with eye-catching animations.
               </p>
             </div>
-            <div className="flex p-6 gap-8 justify-center font-bold">
+            <div className="flex p-2 gap-8 justify-center font-bold">
               <p>
                 {" "}
                 <img className="h-8 w-15" src="frame.png"></img>
@@ -333,7 +344,12 @@ const Projects = () => {
               </div>
               <div className="flex items-center gap-2">
                 <p>Live Demo</p>
-                <a className="pointer" href="https://framerio.netlify.app/">
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  className="pointer"
+                  href="https://framerio.netlify.app/"
+                >
                   <PiArrowSquareOutBold />
                 </a>
               </div>

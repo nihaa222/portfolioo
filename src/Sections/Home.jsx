@@ -62,7 +62,7 @@ const Home = ({ isScrolled }) => {
               <p style={{ display: "inline" }}>
                 <img
                   style={{ display: "inline" }}
-                  className="h-6 w-6 mb-3"
+                  className="h-6 w-6 mb-3 lg:w-12 lg:h-12 lg:mb-9"
                   src="hand.png"
                 ></img>
               </p>
@@ -75,18 +75,18 @@ const Home = ({ isScrolled }) => {
               </p>
             </div>
             <div>
-              <p className=" leading-tight xl:text-[25px] lg:text-[20px] tracking-wider text-[]  text-gray-700 w-auto sm:w-[400px] md:w-[500px] lg:w-[600px] xl:w-[800px]  ">
-                A skilled and passionate developer with experience in creationg
-                visulally appealing and user-friendly websites
+              <p className=" leading-tight xl:text-[25px] font-semibold lg:text-[20px] tracking-wider text-[]  text-gray-700 w-auto sm:w-[400px] md:w-[500px] lg:w-[600px] xl:w-[800px]  ">
+                A skilled and passionate developer with experience in creating
+                visulally appealing and intuitive websites
               </p>
             </div>
 
-            <div className="flex gap-3 text-pink-700  mt-5 ">
-              <a href={linkedinProfileUrl}>
-                <IoLogoLinkedin className="h-5 w-5" />
+            <div className="flex gap-3 mt-5 ">
+              <a className="text-blue-800" href={linkedinProfileUrl}>
+                <IoLogoLinkedin className="h-6 w-6" />
               </a>
               <a href={gitProfileUrl}>
-                <FaGithub className="h-5 w-5" />
+                <FaGithub className="h-6 w-6" />
               </a>
             </div>
           </div>
@@ -94,7 +94,7 @@ const Home = ({ isScrolled }) => {
           <div className="justify-self-center sm:justify-self-end">
             <img
               style={{
-                boxShadow: "-3px -6px 29px -1px rgba(219, 39, 119, 0.75)", // Tailwind pink-500 color
+                boxShadow: "-3px -6px 29px -1px rgba(219, 39, 119, 0.55)", // Tailwind pink-500 color
                 display: setup === true ? "none" : "block",
                 objectFit: "cover",
               }}

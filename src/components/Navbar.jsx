@@ -20,11 +20,11 @@ const Navbar = ({ isScrolled }) => {
 
   return (
     <div
-      className={`flex p-6 a fixed w-full z-50 font-bold items-center justify-between xl:p-10 lg:text-[20px] top-0 left-0 text-pink-700 ${
+      className={`flex p-6 a fixed w-full sm:bg-white z-50 font-bold items-center justify-between xl:p-10 lg:text-[20px] top-0 left-0 text-pink-700 ${
         isScrolled ? "bg-gray-400" : "bg-#e5b1b9;"
       }`}
     >
-      <div className="fixed top-3  ">Niharika Deb</div>
+      <div className="fixed top-3 lg:top-5 ">Niharika Deb</div>
 
       <div className="block fixed right-4 top-3 sm:hidden">
         <button onClick={toggleMenu}>
@@ -42,7 +42,7 @@ const Navbar = ({ isScrolled }) => {
           <div className="sm:flex fixed right-40">
             <ul className="flex gap-4 font-bold text-pink-700 flex-col items-center">
               <li onClick={closeMenu}>
-                <Link to="/">Home</Link>
+                <Link to="#home">Home</Link>
               </li>
               <li onClick={closeMenu}>
                 <Link to="#about">About</Link>
@@ -51,7 +51,7 @@ const Navbar = ({ isScrolled }) => {
                 <Link to="#project">Projects</Link>
               </li>
               <li onClick={closeMenu}>
-                <Link to="#contacts">Contacts</Link>
+                <Link to="#contacts">Contact</Link>
               </li>
             </ul>
           </div>
@@ -61,7 +61,7 @@ const Navbar = ({ isScrolled }) => {
       <div className="hidden fixed right-10 top-5 sm:flex  z-50 xl:gap-10">
         <ul className="flex gap-4 xl:gap-10 text-pink-500">
           <li onClick={closeMenu}>
-            <Link to="/">Home</Link>
+            <Link to="#home">Home</Link>
           </li>
           <li onClick={closeMenu}>
             <Link to="#about">About</Link>
@@ -70,7 +70,7 @@ const Navbar = ({ isScrolled }) => {
             <Link to="#project">Projects</Link>
           </li>
           <li onClick={closeMenu}>
-            <Link to="#contacts">Contacts</Link>
+            <Link to="#contacts">Contact</Link>
           </li>
         </ul>
       </div>

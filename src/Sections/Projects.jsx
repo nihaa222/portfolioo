@@ -129,7 +129,7 @@ const Projects = () => {
           </Tilt>
           {/* 2 */}
 
-          <LineA className="w-[40px] absolute md:left-[350px] xl:ml-[240px]">
+          <LineA className="w-[40px] absolute md:left-[350px] xl:ml-[250px]">
             <div className="h-[280px] w-2   bg-pink-700"></div>
           </LineA>
 
@@ -190,7 +190,7 @@ const Projects = () => {
               ></img>
             </div>
           </Tilt>
-          <LineB className="w-[20px] md:ml-[310px] xl:ml-[512px] absolute md:ml-[300px xl:ml-[530px] ">
+          <LineB className="w-[20px] md:ml-[310px] xl:ml-[511.5px] absolute md:ml-[300px xl:ml-[530px] ">
             <div className="h-[280px] w-2  bg-pink-700"></div>
           </LineB>
           {/* 2 */}
@@ -252,7 +252,7 @@ const Projects = () => {
             </div>
           </Tilt>
           {/* 2 */}
-          <LineC className="w-[20px] absolute md:left-[310px] xl:ml-[240px]">
+          <LineC className="w-[20px] absolute md:left-[310px] xl:ml-[250px]">
             <div className="h-[280px] w-2  bg-pink-700"></div>
           </LineC>
           <div className="grid grid-cols-1 ">
@@ -310,7 +310,7 @@ const Projects = () => {
               ></img>
             </div>
           </Tilt>
-          <LineB className="w-[20px] md:ml-[310px] xl:ml-[512px] absolute md:ml-[300px xl:ml-[530px] ">
+          <LineB className="w-[20px] md:ml-[310px] xl:ml-[510px] absolute md:ml-[300px xl:ml-[530px] ">
             <div className="h-[280px] w-2  bg-pink-700"></div>
           </LineB>
           {/* 2 */}

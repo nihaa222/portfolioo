@@ -20,7 +20,7 @@ const Contacts = () => {
             CONTACT ME!
           </p> */}
           <form
-            className="p-4 lg:pl-10 lg:pr-10 pt-24 lg:pt-10 "
+            className="p-4 lg:pl-10 lg:pr-10 pt-5 lg:pt-10 "
             name="contact "
             method="post"
             data-netlify="true"
@@ -88,7 +88,7 @@ const Contacts = () => {
                 </label>
               </div>
               <button
-                className="h-10 w-20 text-pink-500 px-4 py-2 font-semibold mr-[0px] lg:mr-[-50px] mt-10 lg:mt-4 rounded-xl justify-self-center lg:justify-self-end bg-white hover:bg-gray-100"
+                className="h-10 w-20 text-pink-500 px-4 py-2 font-semibold mr-[0px] lg:mr-[-50px] mt-2 lg:mt-4 rounded-xl justify-self-center lg:justify-self-end bg-white hover:bg-gray-100"
                 type="submit"
               >
                 Send

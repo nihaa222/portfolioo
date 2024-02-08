@@ -42,7 +42,7 @@ const Navbar = ({ isScrolled }) => {
             </button>
           </div>
           <div className="sm:flex fixed right-40">
-            <ul className="flex gap-4 font-bold text-pink-500 flex-col items-center">
+            <ul className="flex gap-8  mr-[10px] pt-20 font-bold text-pink-500 flex-col items-center">
               <li onClick={closeMenu}>
                 <Link to="#home">Home</Link>
               </li>

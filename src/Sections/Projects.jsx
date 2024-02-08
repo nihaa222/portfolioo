@@ -196,10 +196,10 @@ const Projects = () => {
           {/* 2 */}
           <div className="grid grid-cols-1 sm:order-1 ">
             <div className="grid grid-cols-1  justify-items-center">
-              <p className="font-bold mr-0 lg:mr-12 lg:text-[25px] text-pink-700 justify-self-center lg:justify-self-end">
+              <p className="font-bold mr-0 mt-2 lg:mr-12 lg:text-[25px] text-pink-700 justify-self-center lg:justify-self-end">
                 GROW{" "}
               </p>
-              <p className="text-[12px] text-end mr-10 lg:text-[20px] xl:w-[500px] sm:text-[14px] p-2">
+              <p className="text-[12px] ml-3 text-start lg:text-end mr-10 lg:text-[20px] xl:w-[500px] sm:text-[14px] p-2">
                 This represents a fully responsive landing page for a finance
                 enterprise, meticulously crafted with an aesthetically pleasing
                 user interface that seamlessly adapts to various screen sizes
@@ -278,7 +278,7 @@ const Projects = () => {
               </p>
             </div>
 
-            <div className="flex gap-8 justify-center sm:p-2 p-4 font-bold">
+            <div className="flex gap-8 justify-center mt-4 sm:p-2 p-4 font-bold">
               <div className="flex items-center gap-2">
                 <p>Code</p>
                 <FaGithub />
@@ -326,7 +326,7 @@ const Projects = () => {
                 where every page comes to life with eye-catching animations.
               </p>
             </div>
-            <div className="flex p-2 gap-8 justify-center font-bold mt-4">
+            <div className="flex p-2 gap-8 justify-center font-bold mt-5">
               <p>
                 {" "}
                 <img className="h-8 w-15" src="frame.png"></img>

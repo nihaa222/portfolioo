@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const Section = styled.div`
   min-height: 100vh;
-  margin-top: 10px;
+
   padding-top: 80px;
   scroll-snap-align: center;
 `;
@@ -14,8 +14,8 @@ const Contacts = () => {
         Get in touch ?
       </p>
 
-      <div className="h-full mx-auto flex xs:pt-[30px]  lg:pt-[50px] justify-center">
-        <div className="xs:h-[550px] text-gray-700 shadow-2xl lg:w-[800px] h-[500px] xs:w-[300px] w-[300px] z-1 rounded-3xl bg-opacity-20 bg-gradient-to-r from-463f3a via-#E9EB9E to-pink-600">
+      <div className="h-full mx-auto md:mx-20 flex xs:pt-[30px]  lg:pt-[50px] justify-center">
+        <div className="xs:h-[550px] text-gray-700 shadow-2xl md:w-[800px] h-[500px] xs:w-[300px] w-[300px] z-1 rounded-3xl bg-opacity-20 bg-gradient-to-r from-463f3a via-#E9EB9E to-pink-600">
           {/* <p className="text-center xs:text-[30px] text-[18px] mt-4 z-10 text-white">
             CONTACT ME!
           </p> */}
@@ -27,7 +27,7 @@ const Contacts = () => {
             onSubmit="submit"
           >
             <input required type="hidden" name="form-name" value="contact-v1" />
-            <div className="grid grid-cols-1 gap-4 lg:gap-7 lg:grid-cols-2 ">
+            <div className="grid grid-cols-1 gap-4 lg:gap-7 md:grid-cols-2 ">
               <div>
                 <label className="pb-3 font-semibold  text-pink-400">
                   First Name

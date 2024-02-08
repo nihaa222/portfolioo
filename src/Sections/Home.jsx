@@ -50,7 +50,7 @@ const Home = ({ isScrolled }) => {
       <Section id="home" className="h-[100vh] background">
         <Navbar isScrolled={isScrolled} />
 
-        <div className="h-70% mx-6 2xl:mx-96 xl:mx-64 md:mx-24 lg:mx-36  sm:mx-20 mt-12 lg:mt-20 xl:mt-36 sm:mt-24 grid sm:grid-cols-2  grid-col gap-12  ">
+        <div className="h-70% mx-6 2xl:mx-96 xl:mx-64 md:mx-24 lg:mx-36  sm:mx-20 mt-4 lg:mt-20 xl:mt-36  grid sm:grid-cols-2  grid-col gap-12  ">
           <div className=" grid   grid-col  gap-4">
             <div className="  flex font-bold" style={{ display: "inline" }}>
               <p

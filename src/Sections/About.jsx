@@ -17,7 +17,9 @@ const About = () => {
 
         <div className="flex flex-col gap-6 justify-self-center">
           <div className="">
-            <p className="text-pink-500 font-bold xl:text-[60px]">ABOUT ME</p>
+            <p className="text-pink-500 font-bold md:text-[40px] xl:text-[60px]">
+              ABOUT ME
+            </p>
           </div>
           <div>
             <p className="md:text-center whitespace-nowrap lg:text-[25px] text-justify md:justify-self-start font-bold lg:text-left">

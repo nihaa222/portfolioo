@@ -99,7 +99,7 @@ const Projects = () => {
   return (
     <Section id="project">
       <div className=" text-center mb-[30px]  ">
-        <p className="text-[18px]  lg:text-[60px] text-pink-500  font-bold">
+        <p className="text-[18px] md:text-[40px]  lg:text-[60px] text-pink-500  font-bold">
           PROJECTS
         </p>
       </div>
@@ -118,7 +118,7 @@ const Projects = () => {
           <Tilt>
             <div
               className="xl:w-[500px]"
-              style={{ boxShadow: "14px -13px 80px 1px rgba(0, 0, 0, 0.404)" }}
+              style={{ boxShadow: "14px -13px 80px 1px rgba(0, 0, 0, 0.188)" }}
             >
               <img
                 className="mb-2 rounded-2xl xl:w-[500px]"
@@ -135,7 +135,7 @@ const Projects = () => {
 
           <div className="grid grid-cols-1 xl:w-[500px]">
             <div className="grid grid-cols-1  ">
-              <p className="font-semibold justify-self-left lg:text-[25px] text-pink-700">
+              <p className="font-semibold lg:justify-self-left justify-self-center ml-2 lg:justify-self-start  lg:text-[25px] text-pink-700">
                 FAST PIZZA{" "}
               </p>
               <p className="text-[12px] lg:text-[20px] xl:w-[500px] sm:text-[14px] p-2">
@@ -182,7 +182,7 @@ const Projects = () => {
           <Tilt className="sm:order-2">
             <div
               className="xl:w-[500px]"
-              style={{ boxShadow: "14px -13px 80px 1px rgba(0, 0, 0, 0.404)" }}
+              style={{ boxShadow: "14px -13px 80px 1px rgba(0, 0, 0, 0.188)" }}
             >
               <img
                 className=" rounded-2xl xl:w-[500px]"
@@ -196,7 +196,7 @@ const Projects = () => {
           {/* 2 */}
           <div className="grid grid-cols-1 sm:order-1 ">
             <div className="grid grid-cols-1  justify-items-center">
-              <p className="font-bold mr-0 lg:mr-12 lg:text-[25px] text-pink-700 justify-self-end">
+              <p className="font-bold mr-0 lg:mr-12 lg:text-[25px] text-pink-700 justify-self-center lg:justify-self-end">
                 GROW{" "}
               </p>
               <p className="text-[12px] text-end mr-10 lg:text-[20px] xl:w-[500px] sm:text-[14px] p-2">
@@ -207,7 +207,7 @@ const Projects = () => {
                 visitors.
               </p>
             </div>
-            <div className="flex p-2 gap-8 justify-center font-bold">
+            <div className="flex p-2 gap-8 justify-center mt-2 font-bold">
               <p>
                 <img className="h-8 w-15" src="reactnew.png"></img>
               </p>
@@ -216,7 +216,7 @@ const Projects = () => {
               </p>
             </div>
 
-            <div className="flex gap-8 justify-center sm:p-2 font-bold pb-2">
+            <div className="flex gap-8 justify-center mt-4 p-4 items-center  sm:p-2 font-bold">
               <div className="flex items-center gap-2">
                 <p>Code</p>
                 <FaGithub />
@@ -257,7 +257,7 @@ const Projects = () => {
           </LineC>
           <div className="grid grid-cols-1 ">
             <div className="grid grid-cols-1   ">
-              <p className="font-bold lg:text-[25px] justify-self-start text-pink-700">
+              <p className="font-bold lg:text-[25px] justify-self-center lg:justify-self-start text-pink-700">
                 OREBI
               </p>
               <p className="text-[12px] xl:w-[510px] lg:text-[20px] sm:text-[14px ] p-2">
@@ -316,17 +316,17 @@ const Projects = () => {
           {/* 2 */}
           <div className="grid grid-cols-1 sm:order-1 ">
             <div className="grid grid-cols-1  ">
-              <p className="font-bold mr-0 lg:mr-12 lg:text-[25px] justify-self-end text-pink-700">
+              <p className="font-bold mr-0 lg:mr-12 lg:text-[25px] justify-self-center lg:justify-self-end text-pink-700">
                 GIGAPLAY{" "}
               </p>
-              <p className="text-[12px] text-end xl:w-[500px] lg:text-[20px] sm:text-[14px] p-2">
+              <p className="text-[12px] text-start lg:text-end xl:w-[500px] lg:text-[20px] sm:text-[14px] p-2">
                 Experience a captivating online journey with our fully animated
                 website, enriched with the dynamic and engaging power of Framer
                 Motion. Immerse yourself in a visually stunning attractions
                 where every page comes to life with eye-catching animations.
               </p>
             </div>
-            <div className="flex p-2 gap-8 justify-center font-bold">
+            <div className="flex p-2 gap-8 justify-center font-bold mt-4">
               <p>
                 {" "}
                 <img className="h-8 w-15" src="frame.png"></img>
@@ -337,7 +337,7 @@ const Projects = () => {
               </p>
             </div>
 
-            <div className="flex gap-8 justify-center sm:p-2 font-bold pb-2">
+            <div className="flex gap-8 justify-center sm:p-2 mt-6 font-bold pb-2">
               <div className="flex items-center gap-2">
                 <p>Code</p>
                 <FaGithub />

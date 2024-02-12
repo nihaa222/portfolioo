@@ -219,7 +219,13 @@ const Projects = () => {
             <div className="flex gap-8 justify-center mt-4 p-4 items-center  sm:p-2 font-bold">
               <div className="flex items-center gap-2">
                 <p>Code</p>
-                <FaGithub />
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://github.com/nihaa222/finance"
+                >
+                  <FaGithub />
+                </a>
               </div>
               <div className="flex items-center gap-2">
                 <p>Live Demo</p>
@@ -281,7 +287,14 @@ const Projects = () => {
             <div className="flex gap-8 justify-center mt-4 sm:p-2 p-4 font-bold">
               <div className="flex items-center gap-2">
                 <p>Code</p>
-                <FaGithub />
+
+                <a
+                  href="https://github.com/nihaa222/ecommerce"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <FaGithub />
+                </a>
               </div>
               <div className="flex items-center gap-2">
                 <p>Live Demo</p>
@@ -340,7 +353,14 @@ const Projects = () => {
             <div className="flex gap-8 justify-center sm:p-2 mt-6 font-bold pb-2">
               <div className="flex items-center gap-2">
                 <p>Code</p>
-                <FaGithub />
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  className="pointer"
+                  href="https://github.com/nihaa222/gigiplay"
+                >
+                  <FaGithub />
+                </a>
               </div>
               <div className="flex items-center gap-2">
                 <p>Live Demo</p>

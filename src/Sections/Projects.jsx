@@ -240,10 +240,10 @@ const Projects = () => {
             </div>
           </div>
         </ProjectB>
-
+        {/* 
         <ProjectC className="grid grid-cols-1 sm:grid-cols-2 sm:gap-8 relative">
           {/* 1 */}
-          <Tilt>
+        {/* <Tilt>
             <div
               className="xl:w-[500px]"
               style={{
@@ -258,7 +258,7 @@ const Projects = () => {
             </div>
           </Tilt>
           {/* 2 */}
-          <LineC className="w-[20px] absolute md:left-[310px] xl:ml-[250px]">
+        {/* <LineC className="w-[20px] absolute md:left-[310px] xl:ml-[250px]">
             <div className="h-[280px] w-2  bg-pink-700"></div>
           </LineC>
           <div className="grid grid-cols-1 ">
@@ -300,6 +300,84 @@ const Projects = () => {
                 <p>Live Demo</p>
                 <a
                   href="https://ecommerceforu.netlify.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <PiArrowSquareOutBold />
+                </a>
+              </div> */}
+        {/* </div> */}
+        {/* </div> */}
+        {/* </ProjectC>  */}
+
+        <ProjectC className="grid grid-cols-1 sm:grid-cols-2 sm:gap-8 relative">
+          {/* 1 */}
+          <Tilt>
+            <div
+              className="xl:w-[500px]"
+              style={{
+                boxShadow:
+                  " rounded-2xl 14px -13px 80px 1px rgba(0, 0, 0, 0.404)",
+              }}
+            >
+              <img
+                className="mb-2 xl:w-[500px] rounded-2xl"
+                src="porshe.png"
+              ></img>
+            </div>
+          </Tilt>
+          {/* 2 */}
+          <LineC className="w-[20px] absolute md:left-[310px] xl:ml-[250px]">
+            <div className="h-[280px] w-2  bg-pink-700"></div>
+          </LineC>
+          <div className="grid grid-cols-1 ">
+            <div className="grid grid-cols-1   ">
+              <p className="font-bold lg:text-[25px] justify-self-center lg:justify-self-start text-pink-700">
+                PorsheEstate
+              </p>
+              <p className="text-[12px] xl:w-[510px] lg:text-[20px] sm:text-[14px ] p-2">
+                PorsheEstate is a leading real estate agency that specializes in
+                helping clients buy, sell, and rent properties in the most
+                desirable neighborhoods. Our team of experienced agents is
+                dedicated to providing exceptional service and making the buying
+                and selling process as smooth as possible.
+              </p>
+            </div>
+            <div className="flex p-2 gap-8 justify-center font-bold">
+              <p>
+                {" "}
+                <img className="h-10 w-15" src="mongodb.png"></img>
+              </p>
+              <p>
+                {" "}
+                <img className="h-10 w-15" src="express.png"></img>
+              </p>
+              <p>
+                {" "}
+                <img className="h-10 w-15" src="react.png"></img>
+              </p>
+              <p>
+                {" "}
+                <img className="h-10 w-15" src="node.png" />
+              </p>
+            </div>
+
+            <div className="flex gap-8 justify-center mt-4 sm:p-2 p-4 font-bold">
+              <div className="flex items-center gap-2">
+                <p>Code</p>
+
+                <a
+                  href="https://github.com/nihaa222/portfolioo"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <FaGithub />
+                </a>
+              </div>
+              <div className="flex items-center gap-2">
+                <p>Live Demo</p>
+                <a
+                  href="https://mern-estate-o3zz.onrender.com/"
                   target="_blank"
                   rel="noreferrer"
                 >

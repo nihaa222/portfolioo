@@ -68,7 +68,7 @@ const Home = ({ isScrolled }) => {
               </p>
 
               <p className="text-[25px] lg:text-[50px] xl:text-[70px] sm:text-[35px] text-pink-700 font-bold">
-                I'm Niharika Deb jijoijoijoji
+                I'm Niharika Deb
               </p>
               <p className="text-[25px] lg:text-[50px] sm:text-[35px] xl:text-[70px] sm:whitespace-nowrap font-bold text-pink-700">
                 {text}

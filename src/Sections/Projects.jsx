@@ -96,6 +96,8 @@ const ProjectD = styled.div`
 const Projects = () => {
   const food = "https://github.com/nihaa222/Food-Blogger";
   const fooddemo = "https://fooddy1.netlify.app/";
+  const blog = "https://github.com/nihaa222/mern-blog";
+  const blogdemo = "https://mern-blog-tewy.onrender.com/";
   return (
     <Section id="project">
       <div className=" text-center mb-[30px]  ">
@@ -105,6 +107,122 @@ const Projects = () => {
       </div>
 
       <div className="mx-auto xl:w-[1200px]  relative md:w-[700px] p-10 grid gap-[50px] md:gap-[100px]">
+        <ProjectB className="grid grid-cols-1 sm:grid-cols-2 sm:gap-8 relative">
+          {/* 1 */}
+          <Tilt className="sm:order-2">
+            <div
+              className="xl:w-[500px]"
+              style={{ boxShadow: "14px -13px 80px 1px rgba(0, 0, 0, 0.188)" }}
+            >
+              <img className=" rounded-2xl xl:w-[500px]" src="/Blog.png"></img>
+            </div>
+          </Tilt>
+          <LineB className="w-[20px] md:ml-[310px] xl:ml-[511.5px] absolute md:ml-[300px xl:ml-[530px] ">
+            <div className="h-[280px] w-2  bg-pink-700"></div>
+          </LineB>
+          {/* 2 */}
+          <div className="grid grid-cols-1 sm:order-1 ">
+            <div className="grid grid-cols-1  justify-items-center">
+              <p className="font-bold mr-0 mt-2 lg:mr-12 lg:text-[25px] text-pink-700 justify-self-center lg:justify-self-end">
+                BUSH BLOG
+              </p>
+              <p className="text-[12px] ml-3 text-start lg:text-end mr-10 lg:text-[20px] xl:w-[500px] sm:text-[14px] p-2">
+                Engage with our tech community, sharing insights on Next.js,
+                React.js, and JavaScript. Join discussions, create personalized
+                profiles, and enjoy a seamless reading experience across
+                devices. Powered by the MERN stack, our platform offers
+                category-based blogging and leverages Next.js for server-side
+                rendering and React.js for dynamic interfaces.
+              </p>
+            </div>
+            <div className="flex p-2 gap-8 justify-center mt-2 font-bold">
+              <p>
+                <img className="h-8 w-15" src="reactnew.png"></img>
+              </p>
+              <p>
+                <img className="h-8 w-15" src="th-removebg-preview.png"></img>
+              </p>
+            </div>
+
+            <div className="flex gap-8 justify-center mt-4 p-4 items-center  sm:p-2 font-bold">
+              <div className="flex items-center gap-2">
+                <p>Code</p>
+                <a target="_blank" rel="noreferrer" href={blog}>
+                  <FaGithub />
+                </a>
+              </div>
+              <div className="flex items-center gap-2">
+                <p>Live Demo</p>
+                <a target="_blank" rel="noreferrer" href={blogdemo}>
+                  <PiArrowSquareOutBold />
+                </a>
+              </div>
+            </div>
+          </div>
+        </ProjectB>
+        {/* <ProjectA className="grid grid-cols-1 sm:row-1 sm:grid-cols-2 sm:gap-8">
+          {/* 0 */}
+        {/* <Tilt> */}
+        {/* <div
+              className="xl:w-[500px]"
+              style={{ boxShadow: "14px -13px 80px 1px rgba(0, 0, 0, 0.188)" }}
+            >
+              <img
+                className="mb-2 rounded-2xl xl:w-[500px]"
+                src="/Blog.png"
+                alt="Project Image"
+              />
+            </div>
+          </Tilt>
+          {/* 2 */}
+        {/* <LineA className="w-[40px] absolute md:left-[350px] xl:ml-[250px]">
+            <div className="h-[280px] w-2   bg-pink-700"></div>
+          </LineA>
+
+          <div className="grid grid-cols-1 xl:w-[500px]">
+            <div className="grid grid-cols-1  ">
+              <p className="font-semibold lg:justify-self-left justify-self-center ml-2 lg:justify-self-start  lg:text-[25px] text-pink-700">
+                FAST PIZZA{" "}
+              </p>
+              <p className="text-[12px] lg:text-[20px] xl:w-[500px] sm:text-[14px] p-2">
+                Engage with our tech community, sharing insights on Next.js,
+                React.js, and JavaScript. Join discussions, create personalized
+                profiles, and enjoy a seamless reading experience across
+                devices. Powered by the MERN stack, our platform offers
+                category-based blogging and leverages Next.js for server-side
+                rendering and React.js for dynamic interfaces.
+              </p>
+            </div>
+            <div className="flex p-6 xl:p-2 gap-8 justify-center xl:align-center font-bold">
+              <p>
+                <img className="h-8 w-15" src="reactnew.png"></img>
+              </p>
+              <p>
+                <img className="h-8 w-15" src="th-removebg-preview.png"></img>
+              </p>
+            </div>
+
+            <div className="flex gap-8 justify-center p-4 items-center  sm:p-2 font-bold">
+              <div className="flex items-center gap-2">
+                <p>Code</p>
+                <a className="cursor" href={blog}>
+                  <FaGithub />
+                </a>
+              </div>
+              <div className="flex items-center gap-2">
+                <p>Live Demo</p>
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  className="cursor"
+                  href={blogdemo}
+                >
+                  <PiArrowSquareOutBold />
+                </a>
+              </div>
+            </div>
+          </div> */}
+        {/* </ProjectA> */}
         <ProjectA
           className="grid grid-cols-1 sm:row-1 sm:grid-cols-2 sm:gap-8"
           // style={{
@@ -176,7 +294,6 @@ const Projects = () => {
             </div>
           </div>
         </ProjectA>
-
         <ProjectB className="grid grid-cols-1 sm:grid-cols-2 sm:gap-8 relative">
           {/* 1 */}
           <Tilt className="sm:order-2">
@@ -240,7 +357,6 @@ const Projects = () => {
             </div>
           </div>
         </ProjectB>
-
         <ProjectA
           className="grid grid-cols-1 sm:row-1 sm:grid-cols-2 sm:gap-8"
           // style={{
@@ -313,7 +429,6 @@ const Projects = () => {
             </div>
           </div>
         </ProjectA>
-
         <ProjectB className="grid grid-cols-1 sm:grid-cols-2 sm:gap-8 relative">
           {/* 1 */}
           <Tilt className="sm:order-2">

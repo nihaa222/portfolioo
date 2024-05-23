@@ -59,13 +59,13 @@ const Home = ({ isScrolled }) => {
               >
                 Hi
               </p>
-              {/* <p style={{ display: "inline" }}>
+              <p style={{ display: "inline" }}>
                 <img
                   style={{ display: "inline" }}
                   className="h-6 w-6 mb-3 lg:w-12 lg:h-12 lg:mb-9"
                   src="hand.png"
                 ></img>
-              </p> */}
+              </p>
 
               <p className="text-[25px] lg:text-[50px] xl:text-[70px] sm:text-[35px] text-pink-700 font-bold">
                 I'm Niharika Deb

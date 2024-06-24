@@ -29,7 +29,7 @@ const Section = styled.div`
 // export default Home;
 
 const Home = ({ isScrolled }) => {
-  const text = useTypingEffect("Front-End Developer", 200);
+  const text = useTypingEffect("FullStack  Developer", 200);
   const linkedinProfileUrl = "https://www.linkedin.com/in/niharika-deb/";
   const gitProfileUrl = "https://github.com/nihaa222";
 

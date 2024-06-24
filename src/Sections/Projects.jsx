@@ -98,6 +98,8 @@ const Projects = () => {
   const fooddemo = "https://fooddy1.netlify.app/";
   const blog = "https://github.com/nihaa222/mern-blog";
   const blogdemo = "https://mern-blog-tewy.onrender.com/";
+  const ecohub = "https://environment-pcxg.onrender.com/";
+  const ecohubgithub = "https://github.com/nihaa222/environment";
   return (
     <Section id="project">
       <div className=" text-center mb-[30px]  ">
@@ -107,6 +109,74 @@ const Projects = () => {
       </div>
 
       <div className="mx-auto xl:w-[1200px]  relative md:w-[700px] p-10 grid gap-[50px] md:gap-[100px]">
+        <ProjectA
+          className="grid grid-cols-1 sm:row-1 sm:grid-cols-2 sm:gap-8"
+          // style={{
+          //   boxShadow: "14px -13px 80px 1px rgba(0, 0, 0, 0.404)",
+          //   "@media (max-width: 400px)": {
+          //     boxShadow: "none",
+          //   },
+          // }}
+        >
+          {/* 1 */}
+          <Tilt>
+            <div
+              className="xl:w-[500px]"
+              style={{ boxShadow: "14px -13px 80px 1px rgba(0, 0, 0, 0.188)" }}
+            >
+              <img
+                className="mb-2 rounded-2xl xl:w-[500px]"
+                src="ecohub.png"
+                alt="Project Image"
+              />
+            </div>
+          </Tilt>
+          {/* 2 */}
+
+          <LineA className="w-[40px] absolute md:left-[350px] xl:ml-[250px]">
+            <div className="h-[280px] w-2   bg-pink-700"></div>
+          </LineA>
+
+          <div className="grid grid-cols-1 xl:w-[500px]">
+            <div className="grid grid-cols-1  ">
+              <p className="font-semibold lg:justify-self-left justify-self-center ml-2 lg:justify-self-start  lg:text-[25px] text-pink-700">
+                ECO HUB
+              </p>
+              <p className="text-[12px] lg:text-[20px] xl:w-[500px] sm:text-[14px] p-2">
+                EcoHub serves as a dedicated platform for environmentalists to
+                create and join initiatives effortlessly. Through its integrated
+                map feature, users can pinpoint locations with a simple click.
+                They can also upload images, propose new initiatives, and
+                actively engage in existing ones. This seamless functionality
+                fosters collaboration and empowers users to make a meaningful
+                impact on environmental causes.
+              </p>
+            </div>
+            <div className="flex  gap-8 justify-center xl:align-center font-bold">
+              <img className="h-20 w-24" src="\mernphoto.png"></img>
+            </div>
+
+            <div className="flex gap-8 justify-center p-4 items-center  sm:p-2 font-bold">
+              <div className="flex items-center gap-2">
+                <p>Code</p>
+                <a className="cursor" href={ecohubgithub}>
+                  <FaGithub />
+                </a>
+              </div>
+              <div className="flex items-center gap-2">
+                <p>Live Demo</p>
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  className="cursor"
+                  href={ecohub}
+                >
+                  <PiArrowSquareOutBold />
+                </a>
+              </div>
+            </div>
+          </div>
+        </ProjectA>
         <ProjectB className="grid grid-cols-1 sm:grid-cols-2 sm:gap-8 relative">
           {/* 1 */}
           <Tilt className="sm:order-2">
@@ -136,12 +206,7 @@ const Projects = () => {
               </p>
             </div>
             <div className="flex p-2 gap-8 justify-center mt-2 font-bold">
-              <p>
-                <img className="h-8 w-15" src="reactnew.png"></img>
-              </p>
-              <p>
-                <img className="h-8 w-15" src="th-removebg-preview.png"></img>
-              </p>
+              <img className="h-20 w-24" src="\mernphoto.png"></img>
             </div>
 
             <div className="flex gap-8 justify-center mt-4 p-4 items-center  sm:p-2 font-bold">

@@ -4,7 +4,7 @@ const Abtem = () => {
   const [formattedText, setFormattedText] = useState("");
 
   useEffect(() => {
-    const text = "FRONT.END WEB DEVELOPER";
+    const text = "FUllSTACK WEB DEVELOPER";
     setFormattedText(
       text.split("").map((char, i) => (
         <span

@@ -119,23 +119,8 @@ const Projects = () => {
           // }}
         >
           {/* 1 */}
-          <Tilt>
-            <div
-              className="xl:w-[500px]"
-              style={{ boxShadow: "14px -13px 80px 1px rgba(0, 0, 0, 0.188)" }}
-            >
-              <img
-                className="mb-2 xl:w-[500px] rounded-2xl"
-                src="ecommerce.png"
-              ></img>
-            </div>
-          </Tilt>
+
           {/* 2 */}
-
-          <LineA className="w-[40px] absolute md:left-[350px] xl:ml-[250px]">
-            <div className="h-[280px] w-2   bg-pink-700"></div>
-          </LineA>
-
           <div className="grid grid-cols-1 xl:w-[500px]">
             <div className="grid grid-cols-1  ">
               <p className="font-semibold lg:justify-self-left justify-self-center ml-2 lg:justify-self-start  lg:text-[25px] text-pink-700">
@@ -180,6 +165,20 @@ const Projects = () => {
               </div>
             </div>
           </div>
+          <LineA className="w-[40px] absolute md:left-[350px] xl:ml-[250px]">
+            <div className="h-[280px] w-2   bg-pink-700"></div>
+          </LineA>
+          <Tilt>
+            <div
+              className="xl:w-[500px] "
+              style={{ boxShadow: "14px -13px 80px 1px rgba(0, 0, 0, 0.188)" }}
+            >
+              <img
+                className="mb-2  xl:w-[500px] rounded-2xl"
+                src="ecommerce.png"
+              ></img>
+            </div>
+          </Tilt>
         </ProjectA>
 
         <ProjectA
